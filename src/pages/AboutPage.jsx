@@ -30,14 +30,14 @@ export default function AboutPage() {
                         />
 
                         <div className="prose prose-lg text-slate-700 space-y-6">
-                            <p className="text-xl md:text-2xl text-slate-900 font-semibold leading-snug">
+                            <p className="text-lg md:text-xl text-slate-900 font-semibold leading-snug">
                                 The accelerating impacts of <span className="text-blue-700">climate change</span>, resource depletion, and energy insecurity have made <span className="text-blue-600">sustainability</span> a defining global priority.
                             </p>
                             <p className="text-base md:text-lg leading-relaxed text-slate-600">
                                 Technological innovations—when aligned with environmental responsibility and social inclusivity—can play a transformative role in addressing these challenges. Emerging paradigms such as <span className="text-blue-800 font-bold decoration-blue-200 decoration-2 underline-offset-4 underline">Green Manufacturing, Industry 5.0, Circular Economy, and Clean Energy Systems</span> are redefining how industries, governments, and societies function.
                             </p>
                             <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-2xl italic shadow-sm">
-                                <p className="text-base md:text-lg leading-relaxed text-slate-700 m-0 font-medium">
+                                <p className="text-sm md:text-base leading-relaxed text-slate-700 m-0 font-medium">
                                     "{introContent.aboutConference}"
                                 </p>
                             </div>

@@ -76,6 +76,11 @@ export default function HeroSection({
                 {/* Content Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center px-4 pt-28">
                     <div className="text-center text-white px-4 max-w-7xl w-full">
+                        {/* Welcome Line */}
+                        <p style={{ color: '#ffffff' }} className="text-lg md:text-2xl font-bold tracking-widest uppercase mb-3 drop-shadow-lg">
+                            Welcome to ICGST 2026
+                        </p>
+
                         {/* Date & Venue Label */}
                         <p style={{ color: '#ffffff' }} className="text-sm md:text-base uppercase tracking-[0.2em] mb-6 font-semibold drop-shadow-md">
                             {conferenceInfo.dates} • {conferenceInfo.venue.shortName}

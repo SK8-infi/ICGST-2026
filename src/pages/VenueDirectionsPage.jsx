@@ -23,12 +23,12 @@ export default function VenueDirectionsPage() {
                                     </svg>
                                 </div>
                                 <div>
-                                    <h2 className="text-2xl font-black tracking-tight">Conference Venue</h2>
+                                    <h2 className="text-2xl font-black tracking-tight text-white">Conference Venue</h2>
                                     <p className="text-blue-200 text-sm font-medium">ICGST-2026 • 23–25 October 2026</p>
                                 </div>
                             </div>
                             <div className="mt-6 space-y-1">
-                                <p className="text-xl font-bold">ABV-Indian Institute of Information Technology & Management</p>
+                                <p className="text-xl font-bold text-white">ABV-Indian Institute of Information Technology & Management</p>
                                 <p className="text-blue-100 text-lg">Morena Link Road, Gwalior, Madhya Pradesh — 474015, India</p>
                             </div>
                         </div>

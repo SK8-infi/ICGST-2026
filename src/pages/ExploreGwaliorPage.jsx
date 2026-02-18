@@ -7,7 +7,7 @@ const attractions = [
         tagline: 'The Pearl Amongst Fortresses',
         description: 'One of India\'s most imposing hill forts, Gwalior Fort sits atop a rocky massif rising 100 meters above the city. Its massive walls enclose palaces, temples, and water tanks. The Man Mandir Palace, adorned with vibrant ceramic tiles, and the ancient Chaturbhuj Temple — home to the second oldest recorded use of the number zero — are among its highlights.',
         highlight: 'Must-visit • UNESCO Tentative List',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Gwalior_Fort_front.jpg/1280px-Gwalior_Fort_front.jpg',
+        image: 'https://www.indiaholidaymall.com/images/blog/Gwalior-Fort.jpg',
     },
     {
         name: 'Jai Vilas Palace & Scindia Museum',
@@ -21,14 +21,14 @@ const attractions = [
         tagline: 'Architectural Marvel of the 9th Century',
         description: 'Standing at 30 meters, Teli Ka Mandir is the tallest structure within Gwalior Fort. This unique temple blends Dravidian and Indo-Aryan architectural styles, with a rectangular sanctum and an ornate roof that resembles South Indian temples. Its intricate carvings of flying couples, river goddesses, and serpentine motifs are remarkable.',
         highlight: 'Inside Gwalior Fort • Free entry with fort ticket',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Teli_Ka_Mandir%2C_Gwalior_Fort.JPG/800px-Teli_Ka_Mandir%2C_Gwalior_Fort.JPG',
+        image: 'https://hblimg.mmtcdn.com/content/hubble/img/gwalior/mmt/activities/t_trp/m_activities_gwalior_teli_ka_mandir_l_391_588.jpg',
     },
     {
         name: 'Tomb of Tansen',
         tagline: 'Tribute to a Musical Legend',
         description: 'The memorial of Miyan Tansen, one of the greatest musicians in Indian history and one of the "Nine Gems" of Emperor Akbar\'s court. The tomb is set in a serene garden surrounded by tamarind trees. The annual Tansen Music Festival, held every November-December, attracts classical musicians from across India.',
         highlight: 'Cultural landmark • Near Ghaus Mohammad\'s Tomb',
-        image: 'https://www.orientalarchitecture.com/gallery/india/gwalior/muhammad-ghawth-tomb/photos/muhammad-ghawth_tomb01.jpg',
+        image: 'https://www.trawell.in/admin/images/upload/169220756Gwalior_Mohammed_Ghaus_Tomb_Main.jpg',
     },
     {
         name: 'Sun Temple (Surya Mandir)',

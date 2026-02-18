@@ -74,7 +74,7 @@ export default function SubmissionGuidelinesPage() {
                                 Submission
                             </h3>
                             <div className="space-y-3">
-                                <a href="https://cmt3.research.microsoft.com/" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2 px-4 bg-indigo-600 text-white rounded-lg font-bold hover:bg-indigo-700 transition-colors shadow-md">
+                                <a href="https://cmt3.research.microsoft.com/" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2 px-4 bg-[#002855] !text-white rounded-lg font-bold hover:bg-[#001a3a] transition-colors shadow-md">
                                     Submit via Microsoft CMT
                                 </a>
                             </div>

@@ -71,7 +71,7 @@ export default function CommitteePage() {
                 <SectionHeader
                     title="Organizing Chairs"
                 />
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     {organizingChairs.map((member, index) => (
                         <MemberCard key={index} member={member} />
                     ))}
@@ -92,29 +92,35 @@ function MemberCard({ member }) {
             .slice(0, 2);
 
     return (
-        <div className="bg-white rounded-xl shadow-sm border border-neutral-100 p-6 text-center hover:shadow-md transition-shadow">
+        <div className="bg-white rounded-xl shadow-sm border border-neutral-100 p-8 text-center hover:shadow-md transition-shadow h-full flex flex-col items-center justify-center">
             {/* Avatar */}
-            <div className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-white shadow-lg"
-                style={{ backgroundColor: '#003366' }}>
+            <div
+                className="w-52 h-52 rounded-2xl mb-6 mx-auto flex items-center justify-center text-4xl font-bold text-white shadow-lg overflow-hidden"
+                style={{ backgroundColor: '#003366' }}
+            >
                 {member.image ? (
-                    <img src={member.image} alt={member.name} className="w-full h-full rounded-full object-cover" />
+                    <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover rounded-2xl transition-transform duration-500 hover:scale-110"
+                    />
                 ) : (
                     initials
                 )}
             </div>
 
             {/* Name */}
-            <h3 className="text-base font-bold text-neutral-900 mb-1">{member.name}</h3>
+            <h3 className="text-xl font-bold text-neutral-900 mb-2">{member.name}</h3>
 
             {/* Designation */}
-            <p className="text-xs font-semibold text-primary-700 uppercase tracking-wider mb-2">{member.designation}</p>
+            <p className="text-sm font-bold text-primary-700 uppercase tracking-wider mb-3">{member.designation}</p>
 
             {/* Affiliation */}
-            <p className="text-sm text-neutral-600">{member.affiliation}</p>
+            <p className="text-base text-neutral-600">{member.affiliation}</p>
 
             {/* Email */}
             {member.email && (
-                <a href={`mailto:${member.email}`} className="text-xs text-primary-600 hover:text-primary-800 mt-2 inline-block">
+                <a href={`mailto:${member.email}`} className="text-sm text-primary-600 hover:text-primary-800 mt-3 inline-block font-medium">
                     {member.email}
                 </a>
             )}

@@ -53,6 +53,33 @@ export default function NavLinks({
         );
     }
 
+    // --- DRAWER LAYOUT (Vertical List) ---
+    if (layout === "drawer") {
+        return (
+            <div className={`flex flex-col gap-1 w-full ${className}`}>
+                {items.map((item, index) => (
+                    <NavLink
+                        key={item.path}
+                        to={item.path}
+                        onClick={(e) => handleSmoothScrollNav(e, item.path)}
+                        className={({ isActive }) =>
+                            `block px-4 py-3 text-sm font-medium transition-all duration-200 ${itemClassName} ${enableAnimation ? 'animate-slide-in-right' : ''}`
+                        }
+                        style={({ isActive }) => ({
+                            color: isActive ? activeColor : inactiveColor,
+                            fontWeight: isActive ? '700' : '500',
+                            backgroundColor: isActive ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                            borderLeft: isActive ? `4px solid ${activeColor}` : '4px solid transparent',
+                            animationDelay: enableAnimation ? `${index * 50}ms` : '0ms'
+                        })}
+                    >
+                        {item.label}
+                    </NavLink>
+                ))}
+            </div>
+        );
+    }
+
     // --- DESKTOP LAYOUT (Standard List - No Dropdown) ---
     return (
         <div className={`flex items-center gap-4 xl:gap-6 whitespace-nowrap overflow-visible ${className}`}>
