@@ -194,20 +194,20 @@ export default function Navbar() {
                             <div className="flex-1 overflow-y-auto py-6 flex flex-col items-center">
                                 {/* Home */}
                                 <NavLink to={ROUTES.HOME} onClick={() => setIsMenuOpen(false)}
-                                    className={({ isActive }) => `py-3 text-base font-medium transition-colors ${isActive ? 'text-white font-bold' : 'text-gray-300 hover:text-white'}`}>
+                                    className={({ isActive }) => `py-3 text-base font-medium transition-colors ${isActive ? 'text-white font-bold' : 'text-white'}`}>
                                     Home
                                 </NavLink>
 
                                 {/* About */}
                                 <NavLink to={ROUTES.ABOUT} onClick={() => setIsMenuOpen(false)}
-                                    className={({ isActive }) => `py-3 text-base font-medium transition-colors ${isActive ? 'text-white font-bold' : 'text-gray-300 hover:text-white'}`}>
+                                    className={({ isActive }) => `py-3 text-base font-medium transition-colors ${isActive ? 'text-white font-bold' : 'text-white'}`}>
                                     About
                                 </NavLink>
 
                                 {/* Call for Papers with chevron */}
                                 <button
                                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                                    className="flex items-center justify-center gap-2 py-3 text-base font-medium text-gray-300 hover:text-white transition-colors"
+                                    className="flex items-center justify-center gap-2 py-3 text-base font-medium text-white transition-colors"
                                 >
                                     Call for Papers
                                     <svg className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -217,15 +217,15 @@ export default function Navbar() {
                                 {isDropdownOpen && (
                                     <div className="flex flex-col items-center gap-0 pb-1">
                                         <NavLink to={ROUTES.TRACKS} onClick={() => setIsMenuOpen(false)}
-                                            className={({ isActive }) => `py-2 text-sm transition-colors ${isActive ? 'text-white font-bold' : 'text-gray-400 hover:text-white'}`}>
+                                            className={({ isActive }) => `py-2 text-sm transition-colors ${isActive ? 'text-white font-bold' : 'text-white/80'}`}>
                                             Conference Tracks
                                         </NavLink>
                                         <NavLink to={ROUTES.GUIDELINES} onClick={() => setIsMenuOpen(false)}
-                                            className={({ isActive }) => `py-2 text-sm transition-colors ${isActive ? 'text-white font-bold' : 'text-gray-400 hover:text-white'}`}>
+                                            className={({ isActive }) => `py-2 text-sm transition-colors ${isActive ? 'text-white font-bold' : 'text-white/80'}`}>
                                             Submission Guidelines
                                         </NavLink>
                                         <NavLink to={ROUTES.CAMERA_READY} onClick={() => setIsMenuOpen(false)}
-                                            className={({ isActive }) => `py-2 text-sm transition-colors ${isActive ? 'text-white font-bold' : 'text-gray-400 hover:text-white'}`}>
+                                            className={({ isActive }) => `py-2 text-sm transition-colors ${isActive ? 'text-white font-bold' : 'text-white/80'}`}>
                                             Camera Ready
                                         </NavLink>
                                     </div>
@@ -233,20 +233,20 @@ export default function Navbar() {
 
                                 {/* Important Dates */}
                                 <NavLink to={ROUTES.IMPORTANT_DATES} onClick={() => setIsMenuOpen(false)}
-                                    className={({ isActive }) => `py-3 text-base font-medium transition-colors ${isActive ? 'text-white font-bold' : 'text-gray-300 hover:text-white'}`}>
+                                    className={({ isActive }) => `py-3 text-base font-medium transition-colors ${isActive ? 'text-white font-bold' : 'text-white'}`}>
                                     Important Dates
                                 </NavLink>
 
                                 {/* Registration */}
                                 <NavLink to={ROUTES.REGISTRATION} onClick={() => setIsMenuOpen(false)}
-                                    className={({ isActive }) => `py-3 text-base font-medium transition-colors ${isActive ? 'text-white font-bold' : 'text-gray-300 hover:text-white'}`}>
+                                    className={({ isActive }) => `py-3 text-base font-medium transition-colors ${isActive ? 'text-white font-bold' : 'text-white'}`}>
                                     Registration
                                 </NavLink>
 
                                 {/* Travel with chevron */}
                                 <button
                                     onClick={() => setIsTravelDropdownOpen(!isTravelDropdownOpen)}
-                                    className="flex items-center justify-center gap-2 py-3 text-base font-medium text-gray-300 hover:text-white transition-colors"
+                                    className="flex items-center justify-center gap-2 py-3 text-base font-medium text-white transition-colors"
                                 >
                                     Travel
                                     <svg className={`w-4 h-4 transition-transform duration-200 ${isTravelDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -256,15 +256,15 @@ export default function Navbar() {
                                 {isTravelDropdownOpen && (
                                     <div className="flex flex-col items-center gap-0 pb-1">
                                         <NavLink to={ROUTES.TRAVEL_VISA} onClick={() => setIsMenuOpen(false)}
-                                            className={({ isActive }) => `py-2 text-sm transition-colors ${isActive ? 'text-white font-bold' : 'text-gray-400 hover:text-white'}`}>
+                                            className={({ isActive }) => `py-2 text-sm transition-colors ${isActive ? 'text-white font-bold' : 'text-white/80'}`}>
                                             Travel Visa
                                         </NavLink>
                                         <NavLink to={ROUTES.TRAVEL_VENUE} onClick={() => setIsMenuOpen(false)}
-                                            className={({ isActive }) => `py-2 text-sm transition-colors ${isActive ? 'text-white font-bold' : 'text-gray-400 hover:text-white'}`}>
+                                            className={({ isActive }) => `py-2 text-sm transition-colors ${isActive ? 'text-white font-bold' : 'text-white/80'}`}>
                                             Venue & Directions
                                         </NavLink>
                                         <NavLink to={ROUTES.TRAVEL_EXPLORE} onClick={() => setIsMenuOpen(false)}
-                                            className={({ isActive }) => `py-2 text-sm transition-colors ${isActive ? 'text-white font-bold' : 'text-gray-400 hover:text-white'}`}>
+                                            className={({ isActive }) => `py-2 text-sm transition-colors ${isActive ? 'text-white font-bold' : 'text-white/80'}`}>
                                             Explore Gwalior
                                         </NavLink>
                                     </div>
@@ -272,13 +272,13 @@ export default function Navbar() {
 
                                 {/* Committee */}
                                 <NavLink to={ROUTES.COMMITTEE} onClick={() => setIsMenuOpen(false)}
-                                    className={({ isActive }) => `py-3 text-base font-medium transition-colors ${isActive ? 'text-white font-bold' : 'text-gray-300 hover:text-white'}`}>
+                                    className={({ isActive }) => `py-3 text-base font-medium transition-colors ${isActive ? 'text-white font-bold' : 'text-white'}`}>
                                     Committee
                                 </NavLink>
 
                                 {/* Contact */}
                                 <NavLink to={ROUTES.CONTACT} onClick={() => setIsMenuOpen(false)}
-                                    className={({ isActive }) => `py-3 text-base font-medium transition-colors ${isActive ? 'text-white font-bold' : 'text-gray-300 hover:text-white'}`}>
+                                    className={({ isActive }) => `py-3 text-base font-medium transition-colors ${isActive ? 'text-white font-bold' : 'text-white'}`}>
                                     Contact Us
                                 </NavLink>
                             </div>
