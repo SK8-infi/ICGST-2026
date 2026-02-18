@@ -4,10 +4,14 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import TracksPage from './pages/TracksPage';
 import ImportantDatesPage from './pages/ImportantDatesPage';
-import DoctoralColloquiumPage from './pages/DoctoralColloquiumPage';
-import JournalsPage from './pages/JournalsPage';
 import RegistrationPage from './pages/RegistrationPage';
 import CommitteePage from './pages/CommitteePage';
+import SubmissionGuidelinesPage from './pages/SubmissionGuidelinesPage';
+import CameraReadyPage from './pages/CameraReadyPage';
+import ContactPage from './pages/ContactPage';
+import TravelVisaPage from './pages/TravelVisaPage';
+import VenueDirectionsPage from './pages/VenueDirectionsPage';
+import ExploreGwaliorPage from './pages/ExploreGwaliorPage';
 import { ROUTES } from './constants/routes';
 
 import ScrollToTop from './components/layout/ScrollToTop';
@@ -21,13 +25,18 @@ export default function App() {
           <Route path={ROUTES.HOME} element={<HomePage />} />
           <Route path={ROUTES.ABOUT} element={<AboutPage />} />
           <Route path={ROUTES.TRACKS} element={<TracksPage />} />
+          <Route path={ROUTES.GUIDELINES} element={<SubmissionGuidelinesPage />} />
+          <Route path={ROUTES.CAMERA_READY} element={<CameraReadyPage />} />
           <Route path={ROUTES.IMPORTANT_DATES} element={<ImportantDatesPage />} />
-          <Route path={ROUTES.DOCTORAL_COLLOQUIUM} element={<DoctoralColloquiumPage />} />
-          <Route path={ROUTES.JOURNALS} element={<JournalsPage />} />
           <Route path={ROUTES.REGISTRATION} element={<RegistrationPage />} />
+          <Route path={ROUTES.TRAVEL_VISA} element={<TravelVisaPage />} />
+          <Route path={ROUTES.TRAVEL_VENUE} element={<VenueDirectionsPage />} />
+          <Route path={ROUTES.TRAVEL_EXPLORE} element={<ExploreGwaliorPage />} />
           <Route path={ROUTES.COMMITTEE} element={<CommitteePage />} />
+          <Route path={ROUTES.CONTACT} element={<ContactPage />} />
         </Route>
       </Routes>
     </Router>
   );
 }
+

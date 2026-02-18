@@ -1,27 +1,21 @@
 import { Link } from 'react-router-dom';
-import { introContent, importantDates } from '../../data/conferenceData';
+import { introContent } from '../../data/conferenceData';
 import { ROUTES } from '../../constants/routes';
 import SectionContainer, { SectionHeader } from '../ui/SectionContainer';
 import Button from '../ui/Button';
 
 export default function IntroSection() {
-    // Get first 3 important dates for preview
-    const previewDates = importantDates.slice(0, 3);
-
-
     return (
         <SectionContainer background="white" className="relative overflow-hidden">
 
             {/* Intro Content & Poster Grid */}
             <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center mb-20 max-w-7xl mx-auto relative z-10">
-                {/* Left: Text Content - Expanded Width */}
+                {/* Left: Text Content */}
                 <div className="lg:col-span-7 xl:col-span-8 text-left space-y-8">
                     <div className="space-y-4">
-
-
                         <SectionHeader
-                            title="Welcome to DIGI-SUSTAIN 2026"
-                            subtitle="Exploring Digital Innovation for a Sustainable Future"
+                            title="Welcome to ICGST-2026"
+                            subtitle="International Conference on Green and Sustainable Technologies"
                             className="!text-left !mb-0"
                         />
                         <div className="w-24 h-1.5 bg-primary-600 rounded-full" />
@@ -34,8 +28,8 @@ export default function IntroSection() {
                     </div>
 
                     <div className="pt-6 flex flex-wrap gap-5 justify-start">
-                        <Button href="/assets/brochure.pdf" variant="primary" size="lg" className="shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all">
-                            Download Brochure
+                        <Button to={ROUTES.TRACKS} variant="primary" size="lg" className="shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all">
+                            Call for Papers
                         </Button>
                         <Button to={ROUTES.ABOUT} variant="outline" size="lg" className="hover:bg-primary-50">
                             Learn More
@@ -43,21 +37,58 @@ export default function IntroSection() {
                     </div>
                 </div>
 
-                {/* Right: Poster Image - Static & Clean */}
+                {/* Right: Conference Info Card */}
                 <div className="lg:col-span-5 xl:col-span-4 relative flex justify-center lg:justify-end">
-                    <div className="relative max-w-[320px] w-full">
-                        {/* Decorative background elements - Static */}
+                    <div className="relative max-w-[360px] w-full">
+                        {/* Decorative background */}
                         <div className="absolute -inset-4 bg-gradient-to-tr from-primary-100 to-primary-50 rounded-[2rem] opacity-60" />
                         <div className="absolute -inset-2 bg-white/40 rounded-[2rem] backdrop-blur-sm" />
 
-                        <img
-                            src="https://lh3.googleusercontent.com/d/1qzkUJ3NWxHbdllW1Hd5Sp6N5bpSAM9sn"
-                            alt="Developed India Mission 1947-2047"
-                            className="relative rounded-2xl shadow-xl w-full h-auto object-contain border border-white/50 bg-white"
-                        />
+                        <div className="relative rounded-2xl shadow-xl border border-white/50 bg-white overflow-hidden">
+                            <div style={{ backgroundColor: '#002855' }} className="p-6 text-white">
+                                <h3 className="text-xl font-bold !text-white mb-2">ICGST-2026</h3>
+                                <p className="text-sm !text-white opacity-90 leading-relaxed">International Conference on Green and Sustainable Technologies</p>
+                            </div>
+                            <div className="p-6 space-y-4">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center text-primary-700">
+                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p className="text-xs text-neutral-500 uppercase tracking-wide font-semibold">Dates</p>
+                                        <p className="text-sm font-bold text-neutral-900">23–25 October 2026</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center text-primary-700">
+                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p className="text-xs text-neutral-500 uppercase tracking-wide font-semibold">Venue</p>
+                                        <p className="text-sm font-bold text-neutral-900">ABV-IIITM Gwalior</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center text-primary-700">
+                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p className="text-xs text-neutral-500 uppercase tracking-wide font-semibold">Mode</p>
+                                        <p className="text-sm font-bold text-neutral-900">Physical / Hybrid</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </SectionContainer >
+        </SectionContainer>
     );
 }

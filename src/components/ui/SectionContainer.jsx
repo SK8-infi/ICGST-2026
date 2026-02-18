@@ -11,7 +11,7 @@ export default function SectionContainer({
         dark: 'text-white',
     };
 
-    const style = background === 'dark' ? { backgroundColor: '#1a4731' } : {};
+    const style = background === 'dark' ? { backgroundColor: '#002855' } : {};
 
     return (
         <section id={id} className={`py-16 md:py-20 ${backgrounds[background]} ${className}`} style={style}>

@@ -5,11 +5,12 @@ import { NAV_ITEMS } from '../../constants/routes';
 export default function NavLinks({
     className = "",
     itemClassName = "",
-    activeColor = "#1a4731",
+    activeColor = "#002855",
     inactiveColor = "#525252",
     onItemClick,
     enableAnimation = false,
-    layout = "desktop" // "desktop" | "mobile"
+    layout = "desktop", // "desktop" | "mobile"
+    items = NAV_ITEMS
 }) {
     const navigate = useNavigate();
     const location = useLocation();
@@ -29,7 +30,7 @@ export default function NavLinks({
     if (layout === "mobile") {
         return (
             <div className={`flex items-center gap-6 overflow-x-auto hide-scrollbar whitespace-nowrap py-2 w-full ${className}`}>
-                {NAV_ITEMS.map((item, index) => (
+                {items.map((item, index) => (
                     <NavLink
                         key={item.path}
                         to={item.path}
@@ -52,11 +53,10 @@ export default function NavLinks({
         );
     }
 
-    // --- DESKTOP LAYOUT (Dropdown for extra items) ---
     // --- DESKTOP LAYOUT (Standard List - No Dropdown) ---
     return (
         <div className={`flex items-center gap-4 xl:gap-6 whitespace-nowrap overflow-visible ${className}`}>
-            {NAV_ITEMS.map((item) => (
+            {items.map((item) => (
                 <NavLink
                     key={item.path}
                     to={item.path}

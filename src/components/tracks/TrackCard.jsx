@@ -7,15 +7,15 @@ export default function TrackCard({ track, variant = 'default', index }) {
 
     const accents = {
         default: 'border-primary-500',
-        functional: 'border-green-600',
-        specialized: 'border-teal-500',
+        functional: 'border-blue-600',
+        specialized: 'border-indigo-500',
     };
 
     // Icon container colors
     const iconColors = {
         default: 'bg-primary-50 text-primary-600',
-        functional: 'bg-green-50 text-green-700',
-        specialized: 'bg-teal-50 text-teal-700',
+        functional: 'bg-blue-50 text-blue-700',
+        specialized: 'bg-indigo-50 text-indigo-700',
     };
 
     return (
@@ -38,9 +38,8 @@ export default function TrackCard({ track, variant = 'default', index }) {
 
                 {/* Content */}
                 <div className="w-full pl-[5px]">
-                    <h3 className={`text-base sm:text-lg font-bold text-gray-900 mb-2 leading-tight group-hover:text-primary-800 transition-colors ${
-                        track.id === 'innovation' ? 'break-words' : ''
-                    }`}>
+                    <h3 className={`text-base sm:text-lg font-bold text-gray-900 mb-2 leading-tight group-hover:text-primary-800 transition-colors ${track.id === 'innovation' ? 'break-words' : ''
+                        }`}>
                         {track.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">

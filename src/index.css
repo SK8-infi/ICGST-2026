@@ -2,18 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 @theme {
-  /* Deep Forest Green Palette - Exact match */
-  --color-primary-50: #f0f5f2;
-  --color-primary-100: #d9e6de;
-  --color-primary-200: #b3ccbd;
-  --color-primary-300: #8db39c;
-  --color-primary-400: #5c9373;
-  --color-primary-500: #3d7353;
-  --color-primary-600: #2d5a40;
-  --color-primary-700: #1a4731;
-  --color-primary-800: #153d29;
-  --color-primary-900: #0d2619;
-  --color-primary-950: #051a10;
+  /* IEEE Blue Palette */
+  --color-primary-50: #e6f0fa;
+  --color-primary-100: #cce0f5;
+  --color-primary-200: #99c2eb;
+  --color-primary-300: #66a3e0;
+  --color-primary-400: #4da6ff;
+  --color-primary-500: #3399cc;
+  --color-primary-600: #006eb8;
+  --color-primary-700: #004c99;
+  --color-primary-800: #003366;
+  --color-primary-900: #002855;
+  --color-primary-950: #001a3a;
 
   /* Dark Slate for Footer */
   --color-slate-800: #1e293b;
@@ -54,83 +54,77 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
-  /* Standard base font */
 }
 
 /* Typography Scaling for Mobile */
 @media (max-width: 1023px) {
   body {
     font-size: 14px;
-    /* Reduced for smarter look on mobile */
   }
 }
 
-/* Typography Defaults - Exact Sizes */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-  line-height: 1.25;
-  color: #1a1a1a;
-}
+/* Typography Defaults */
+@layer base {
 
-h1 {
-  font-size: 2.22rem;
-  /* ~40px on 18px base */
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    line-height: 1.25;
+    color: #1a1a1a;
+  }
 
-h2 {
-  font-size: 1.75rem;
-  /* ~32px */
-}
-
-h3 {
-  font-size: 1.5rem;
-  /* ~27px */
-}
-
-h4 {
-  font-size: 1.25rem;
-  /* ~22px */
-}
-
-/* Mobile Heading Adjustments */
-@media (max-width: 1023px) {
   h1 {
-    font-size: 1.5rem;
-    /* ~24px on 16px root */
-    line-height: 1.2;
+    font-size: 2.22rem;
   }
 
   h2 {
-    font-size: 1.25rem;
-    /* ~20px */
-    letter-spacing: -0.01em;
+    font-size: 1.75rem;
   }
 
   h3 {
-    font-size: 1.125rem;
-    /* ~18px */
+    font-size: 1.5rem;
   }
-}
 
-p {
-  margin-bottom: 1rem;
-  color: #525252;
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  /* Mobile Heading Adjustments */
+  @media (max-width: 1023px) {
+    h1 {
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      letter-spacing: -0.01em;
+    }
+
+    h3 {
+      font-size: 1.125rem;
+    }
+  }
+
+  p {
+    margin-bottom: 1rem;
+    color: #525252;
+  }
 }
 
 /* Link Styles */
 a {
-  color: #1f5236;
+  color: #004c99;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #3d7353;
+  color: #006eb8;
 }
 
 /* Utility Classes */
@@ -166,7 +160,7 @@ td {
 }
 
 th {
-  background-color: #1f5236;
+  background-color: #003366;
   color: #ffffff;
   font-weight: 600;
 }
@@ -189,7 +183,7 @@ tbody tr:hover {
   letter-spacing: 0.05em;
 }
 
-/* Text color utilities for explicit colors */
+/* Text color utilities */
 .text-body {
   color: #525252;
 }
@@ -200,4 +194,24 @@ tbody tr:hover {
 
 .text-muted {
   color: #737373;
+}
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 60s linear infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }

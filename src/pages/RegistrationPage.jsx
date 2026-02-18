@@ -9,7 +9,7 @@ export default function RegistrationPage() {
             {/* Page Header */}
             <HeroSection
                 title="Registration"
-                subtitle="Register for DIGI-SUSTAIN 2026 and secure your participation in this premier academic conference."
+                subtitle="Register for ICGST-2026 and secure your participation in this premier international conference."
             />
 
             {/* Registration Details */}
@@ -20,9 +20,6 @@ export default function RegistrationPage() {
                 />
                 <div className="max-w-4xl mx-auto">
                     <RegistrationFeeTable />
-
-
-
                 </div>
             </SectionContainer>
         </>

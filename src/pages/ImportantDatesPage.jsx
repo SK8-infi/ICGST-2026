@@ -9,7 +9,7 @@ export default function ImportantDatesPage() {
             {/* Page Header */}
             <HeroSection
                 title="Important Dates"
-                subtitle="Mark your calendar with these key deadlines and dates for DIGI-SUSTAIN 2026."
+                subtitle="Mark your calendar with these key deadlines and dates for ICGST-2026."
             />
 
             {/* Timeline */}

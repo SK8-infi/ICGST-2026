@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import LatestUpdates from './LatestUpdates';
+
 import { conferenceInfo } from '../../data/conferenceData';
 import { ROUTES } from '../../constants/routes';
 
-// Carousel images - Strictly 4 images as requested
+// Carousel images - ABV-IIITM Gwalior campus images (same venue)
 const carouselImages = [
-    { id: 1, url: 'https://lh3.googleusercontent.com/d/1OoQlP6Ucwi-7L4Oe_0Sl8TCAu8urbm2w', alt: 'Conference venue' },
+    { id: 1, url: 'https://lh3.googleusercontent.com/d/1OoQlP6Ucwi-7L4Oe_0Sl8TCAu8urbm2w', alt: 'ABV-IIITM Gwalior Campus' },
     { id: 2, url: 'https://lh3.googleusercontent.com/d/1AczsTl9ZAEC0j4xj6NSey5ml9YsMBISh', alt: 'Academic session' },
     { id: 3, url: 'https://lh3.googleusercontent.com/d/1sWTOeNuVDQxUhysQfr9DS6z9aJ5Lypj5', alt: 'Research presentation' },
     { id: 4, url: 'https://lh3.googleusercontent.com/d/1bDYy_ReDauwg-bWK_cXmcHeNcSC7EWVh', alt: 'ABV-IIITM Gwalior' },
@@ -22,16 +24,13 @@ export default function HeroSection({
         return isNaN(initial) ? 0 : initial % carouselImages.length;
     });
 
-    // Default values if not provided (fallback logic mainly for safety, but helpful)
     const displayTitle = title || conferenceInfo.shortTitle;
-    const displaySubtitle = subtitle || conferenceInfo.theme;
+    const displaySubtitle = subtitle || conferenceInfo.fullTitle;
 
-    // Persist current slide to localStorage
     useEffect(() => {
         localStorage.setItem('hero_current_slide', currentSlide.toString());
     }, [currentSlide]);
 
-    // Auto-advance slides every 5 seconds
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
@@ -71,37 +70,37 @@ export default function HeroSection({
                     ))}
                 </div>
 
-                {/* Dark overlay for text readability - Enhanced shadow/overlay */}
+                {/* Dark overlay */}
                 <div className={`absolute inset-0 ${isHomePage ? 'bg-black/60' : 'bg-black/80'}`} />
 
                 {/* Content Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center px-4 pt-28">
                     <div className="text-center text-white px-4 max-w-7xl w-full">
-                        {/* Small label - Visible on ALL Pages now */}
+                        {/* Date & Venue Label */}
                         <p style={{ color: '#ffffff' }} className="text-sm md:text-base uppercase tracking-[0.2em] mb-6 font-semibold drop-shadow-md">
                             {conferenceInfo.dates} • {conferenceInfo.venue.shortName}
                         </p>
 
-                        {/* Main Title - Formatted Smartly */}
+                        {/* Main Title */}
                         <div className="flex flex-col gap-4 mb-8">
                             <h1 className="text-white font-light leading-tight drop-shadow-lg">
                                 <span className="block text-2xl md:text-3xl lg:text-4xl font-black mb-2 leading-tight text-white drop-shadow-xl uppercase tracking-widest">
-                                    {title || "International Conference on Digital Transformative Practices for a Sustainable Future (DIGI-SUSTAIN 2026)"}
+                                    {title || "International Conference on Green and Sustainable Technologies (ICGST-2026)"}
                                 </span>
                             </h1>
                         </div>
 
-                        {/* Tagline - Overlay (Visible on ALL screens now) */}
+                        {/* Subtitle */}
                         <p className="hidden md:block text-sm md:text-xl font-bold !text-white mb-8 max-w-6xl mx-auto drop-shadow-[0_4px_6px_rgba(0,0,0,1)] tracking-wide leading-relaxed">
-                            {subtitle || "Technology for Viksit Bharat 2047: Digital Innovation, Sustainability, and Inclusive Growth"}
+                            {subtitle || "23–25 October 2026 • Physical / Hybrid"}
                         </p>
 
-                        {/* CTA Buttons - Restored for Home Page */}
+                        {/* CTA Buttons - Home Page only */}
                         {isHomePage && (
                             <div className="flex flex-row gap-3 justify-center mt-4 md:mt-6">
                                 <Link
                                     to={ROUTES.REGISTRATION}
-                                    style={{ color: '#1a4731', backgroundColor: '#ffffff' }}
+                                    style={{ color: '#002855', backgroundColor: '#ffffff' }}
                                     className="inline-flex items-center justify-center px-4 py-2 md:px-8 md:py-3 text-xs md:text-base font-bold rounded shadow-lg hover:bg-neutral-100 transition-all hover:-translate-y-0.5"
                                 >
                                     Register Now
@@ -111,14 +110,14 @@ export default function HeroSection({
                                     style={{ color: '#ffffff', borderColor: '#ffffff' }}
                                     className="inline-flex items-center justify-center px-4 py-2 md:px-8 md:py-3 border-2 text-xs md:text-base font-bold rounded hover:bg-white/10 transition-all hover:-translate-y-0.5"
                                 >
-                                    Submit Abstract
+                                    Submit Paper
                                 </Link>
                             </div>
                         )}
                     </div>
                 </div>
 
-                {/* Carousel Navigation Arrows - Hidden on mobile, shown on md and up */}
+                {/* Carousel Navigation Arrows */}
                 <button
                     onClick={prevSlide}
                     className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 hidden md:flex items-center justify-center text-white/70 hover:text-white transition-colors focus:outline-none"
@@ -138,7 +137,7 @@ export default function HeroSection({
                     </svg>
                 </button>
 
-                {/* Carousel Dots - Will only show 4 dots now */}
+                {/* Carousel Dots */}
                 <div className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
                     {carouselImages.map((_, index) => (
                         <button
@@ -152,16 +151,21 @@ export default function HeroSection({
                         />
                     ))}
                 </div>
+
+
             </section>
 
-            {/* Mobile Tagline Strip - Thinner & Perfectly Balanced */}
+            {/* Mobile Tagline Strip */}
             {isHomePage && (
-                <div style={{ backgroundColor: '#1a4731' }} className="md:hidden py-[6px] px-6 text-center border-t border-white/10 flex items-center justify-center">
+                <div style={{ backgroundColor: '#002855' }} className="md:hidden py-[6px] px-6 text-center border-t border-white/10 flex items-center justify-center">
                     <p style={{ color: '#ffffff' }} className="m-0 text-xs font-bold tracking-wider uppercase leading-snug opacity-100 italic">
-                        Technology for Viksit Bharat 2047: Digital Innovation, Sustainability, and Inclusive Growth
+                        Green Technologies • Sustainable Innovation • Climate Action
                     </p>
                 </div>
             )}
+
+            {/* Latest Updates Ticker - Global (Below Carousel) */}
+            <LatestUpdates />
         </>
     );
 }

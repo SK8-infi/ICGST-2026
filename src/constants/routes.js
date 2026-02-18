@@ -2,22 +2,24 @@
 export const ROUTES = {
     HOME: '/',
     ABOUT: '/about',
-    TRACKS: '/tracks',
+    TRACKS: '/call-for-papers/tracks',
+    GUIDELINES: '/call-for-papers/guidelines',
+    CAMERA_READY: '/call-for-papers/camera-ready',
     IMPORTANT_DATES: '/important-dates',
-    DOCTORAL_COLLOQUIUM: '/doctoral-colloquium',
-    JOURNALS: '/journals',
     REGISTRATION: '/registration',
+    TRAVEL_VISA: '/travel/visa',
+    TRAVEL_VENUE: '/travel/venue',
+    TRAVEL_EXPLORE: '/travel/explore-gwalior',
     COMMITTEE: '/committee',
+    CONTACT: '/contact',
 };
 
 // Navigation items in required order
 export const NAV_ITEMS = [
     { label: 'Home', path: ROUTES.HOME },
     { label: 'About', path: ROUTES.ABOUT },
-    { label: 'Call for Papers', path: ROUTES.TRACKS },
     { label: 'Important Dates', path: ROUTES.IMPORTANT_DATES },
-    { label: 'Doctoral Colloquium', path: ROUTES.DOCTORAL_COLLOQUIUM },
-    { label: 'Journals', path: ROUTES.JOURNALS },
     { label: 'Registration', path: ROUTES.REGISTRATION },
-    { label: 'Leadership', path: ROUTES.COMMITTEE },
+    { label: 'Committee', path: ROUTES.COMMITTEE },
+    { label: 'Contact Us', path: ROUTES.CONTACT },
 ];
