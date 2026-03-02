@@ -80,6 +80,13 @@ export default function SubmissionGuidelinesPage() {
                             </div>
                         </div>
                     </div>
+                    {/* CMT Acknowledgment */}
+                    <div
+                        className="mt-10 pt-6 border-t border-slate-200 max-w-3xl mx-auto"
+                        dangerouslySetInnerHTML={{
+                            __html: '<p style="text-align:center;font-size:0.8rem;color:#64748b;line-height:1.6;margin:0;">The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft, and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>'
+                        }}
+                    />
 
                 </div>
             </SectionContainer>

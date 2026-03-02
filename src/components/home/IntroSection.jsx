@@ -15,7 +15,7 @@ export default function IntroSection() {
                     <div className="space-y-4">
                         <SectionHeader
                             title="Welcome to ICGST-2026"
-                            subtitle="International Conference on Green and Sustainable Technologies"
+                            subtitle="IEEE International Conference on Green and Sustainable Technologies"
                             className="!text-left !mb-0"
                         />
                         <div className="w-24 h-1.5 bg-primary-600 rounded-full" />
@@ -47,7 +47,7 @@ export default function IntroSection() {
                         <div className="relative rounded-2xl shadow-xl border border-white/50 bg-white overflow-hidden">
                             <div style={{ backgroundColor: '#002855' }} className="p-6 text-white">
                                 <h3 className="text-xl font-bold !text-white mb-2">ICGST-2026</h3>
-                                <p className="text-sm !text-white opacity-90 leading-relaxed">International Conference on Green and Sustainable Technologies</p>
+                                <p className="text-sm !text-white opacity-90 leading-relaxed">IEEE International Conference on Green and Sustainable Technologies</p>
                             </div>
                             <div className="p-6 space-y-4">
                                 <div className="flex items-center gap-3">

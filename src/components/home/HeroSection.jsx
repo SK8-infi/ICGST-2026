@@ -90,7 +90,7 @@ export default function HeroSection({
                         <div className="flex flex-col gap-4 mb-8">
                             <h1 className="text-white font-light leading-tight drop-shadow-lg">
                                 <span className="block text-2xl md:text-3xl lg:text-4xl font-black mb-2 leading-tight text-white drop-shadow-xl uppercase tracking-widest">
-                                    {title || "International Conference on Green and Sustainable Technologies (ICGST-2026)"}
+                                    {title || "IEEE International Conference on Green and Sustainable Technologies (ICGST-2026)"}
                                 </span>
                             </h1>
                         </div>
