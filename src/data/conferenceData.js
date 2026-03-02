@@ -38,27 +38,37 @@ export const aboutInstitute = {
 export const importantDates = [
     {
         activity: 'Call for Paper',
-        date: '1st March 2026',
+        date: 'March 15, 2026',
         isDeadline: false,
     },
     {
         activity: 'Last Date of Paper Submission',
-        date: '1st May 2026',
+        date: 'May 15, 2026',
         isDeadline: true,
     },
     {
         activity: 'Acceptance Notification',
-        date: '15th July 2026',
+        date: 'July 15, 2026',
         isDeadline: false,
     },
     {
+        activity: 'Camera-Ready Submission',
+        date: 'July 30, 2026',
+        isDeadline: true,
+    },
+    {
         activity: 'Early Bird Registration Closed',
-        date: '31st August 2026',
+        date: 'August 31, 2026',
         isDeadline: true,
     },
     {
         activity: 'Regular Registration Closed',
-        date: '1st October 2026',
+        date: 'October 1, 2026',
+        isDeadline: true,
+    },
+    {
+        activity: 'Full Paper Submission',
+        date: 'November 15, 2026 (AOE – Anywhere on Earth)',
         isDeadline: true,
     },
 ];
