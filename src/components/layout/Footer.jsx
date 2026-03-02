@@ -137,6 +137,17 @@ export default function Footer() {
                                 </div>
                             )}
                         </div>
+
+                        {/* Conference Logo */}
+                        <div className="flex justify-center mt-6">
+                            <div className="bg-white rounded-full p-[3px] w-24 h-24 flex items-center justify-center shadow-lg">
+                                <img
+                                    src="https://lh3.googleusercontent.com/d/1jeOsrAKIcerD_kLKSwFJ6JAWT_OfBEgG"
+                                    alt="ICGST-2026 Logo"
+                                    className="w-full h-full object-contain rounded-full"
+                                />
+                            </div>
+                        </div>
                     </div>
 
                 </div>

@@ -68,9 +68,18 @@ export default function Navbar() {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="relative flex items-center justify-between h-12">
                             {/* Conference Acronym */}
-                            <div className="flex-shrink-0 flex items-center gap-3 mr-4 lg:mr-8">
-                                <Link to={ROUTES.HOME} className="font-bold text-[#002855] text-xl md:text-2xl tracking-tight whitespace-nowrap pt-1 lg:pt-0 hover:opacity-80 transition-opacity">
-                                    ICGST-2026
+                            <div className="flex-shrink-0 flex items-center gap-2 mr-4 lg:mr-8">
+                                <Link to={ROUTES.HOME} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                                    <div className="bg-white rounded-full p-[3px] w-9 h-9 flex items-center justify-center shadow-lg">
+                                        <img
+                                            src="https://lh3.googleusercontent.com/d/1jeOsrAKIcerD_kLKSwFJ6JAWT_OfBEgG"
+                                            alt="ICGST-2026 Logo"
+                                            className="w-full h-full object-contain rounded-full"
+                                        />
+                                    </div>
+                                    <span className="font-bold text-[#002855] text-xl md:text-2xl tracking-tight whitespace-nowrap pt-1 lg:pt-0">
+                                        ICGST-2026
+                                    </span>
                                 </Link>
                             </div>
 

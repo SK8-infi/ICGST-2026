@@ -46,6 +46,7 @@ export default function SubmissionGuidelinesPage() {
                                 <li>The completed <strong>IEEE electronic copyright form (ECF)</strong> needs to be transferred as per IEEE requirements.</li>
                                 <li>Review is <strong>single blind</strong>. Papers with poor quality or high similarity index will be desk rejected without review.</li>
                                 <li>All presented papers will be submitted to IEEE for possible publication in <strong>IEEE Xplore</strong>.</li>
+                                <li>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft, and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</li>
                             </ul>
                         </div>
                     </div>
