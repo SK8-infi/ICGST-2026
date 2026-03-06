@@ -1,7 +1,7 @@
 // Conference data - ICGST-2026
 export const conferenceInfo = {
     shortTitle: 'ICGST-2026',
-    fullTitle: 'IEEE International Conference on Green and Sustainable Technologies—2026',
+    fullTitle: 'International Conference on Green and Sustainable Technologies—2026',
     mode: 'Physical / Hybrid (as approved)',
     dates: '23rd – 25th October 2026',
     organizedBy: 'Center of Excellence — Sustainable Technology and Green Mobility',
@@ -16,7 +16,7 @@ export const conferenceInfo = {
 export const introContent = {
     mainIntro: `The accelerating impacts of climate change, resource depletion, environmental degradation, and energy insecurity have made sustainability a defining global priority. Technological innovations—when aligned with environmental responsibility and social inclusivity—can play a transformative role in addressing these challenges. Emerging paradigms such as Green Manufacturing, Industry 5.0, Circular Economy, Digital Sustainability, Clean Energy Systems, and Green Mobility are redefining how industries, governments, and societies function.`,
 
-    aboutConference: `In this context, the IEEE International Conference on Green and Sustainable Technology-2026 (ICGST-2026) aims to provide a premier global platform for researchers, academicians, industry professionals, policymakers, startups, and practitioners to deliberate, disseminate, and co-create solutions for sustainable development. The conference emphasizes interdisciplinary integration of engineering and management disciplines including digital technologies, energy systems, environmental science, agriculture, electronics, policy, and innovation ecosystems.`,
+    aboutConference: `In this context, the International Conference on Green and Sustainable Technology-2026 (ICGST-2026) aims to provide a premier global platform for researchers, academicians, industry professionals, policymakers, startups, and practitioners to deliberate, disseminate, and co-create solutions for sustainable development. The conference emphasizes interdisciplinary integration of engineering and management disciplines including digital technologies, energy systems, environmental science, agriculture, electronics, policy, and innovation ecosystems.`,
 };
 
 export const conferenceObjectives = [
