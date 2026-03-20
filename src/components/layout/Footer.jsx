@@ -166,11 +166,8 @@ export default function Footer() {
 
             {/* Bottom bar */}
             <div className="bg-[#001a3a] border-t border-white/10">
-                <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-4">
-                    <p className="text-xs text-gray-400 text-center mb-4 leading-relaxed max-w-5xl mx-auto">
-                        The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-                    </p>
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-2 text-xs tracking-wide !text-white font-medium border-t border-white/10 pt-4">
+                <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-2">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-2 text-xs tracking-wide !text-white font-medium">
                         <p className="hover:text-white transition-colors">
                             © 2026 ICGST-2026. All Rights Reserved.
                         </p>
