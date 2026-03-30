@@ -97,7 +97,7 @@ export default function HeroSection({
 
                         {/* Subtitle */}
                         <p className="hidden md:block text-sm md:text-xl font-bold !text-white mb-8 max-w-6xl mx-auto drop-shadow-[0_4px_6px_rgba(0,0,0,1)] tracking-wide leading-relaxed">
-                            {subtitle || "23–25 October 2026 • Physical / Hybrid"}
+                            {subtitle || "23–25 October 2026 • Hybrid"}
                         </p>
 
                         {/* CTA Buttons - Home Page only */}

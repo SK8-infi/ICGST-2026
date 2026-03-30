@@ -81,7 +81,7 @@ export default function IntroSection() {
                                     </div>
                                     <div>
                                         <p className="text-xs text-neutral-500 uppercase tracking-wide font-semibold">Mode</p>
-                                        <p className="text-sm font-bold text-neutral-900">Physical / Hybrid</p>
+                                        <p className="text-sm font-bold text-neutral-900">Hybrid</p>
                                     </div>
                                 </div>
                             </div>

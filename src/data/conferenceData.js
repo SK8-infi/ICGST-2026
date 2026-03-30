@@ -2,7 +2,7 @@
 export const conferenceInfo = {
     shortTitle: 'ICGST-2026',
     fullTitle: 'International Conference on Green and Sustainable Technologies—2026',
-    mode: 'Physical / Hybrid (as approved)',
+    mode: 'Hybrid',
     dates: '23rd – 25th October 2026',
     organizedBy: 'Center of Excellence — Sustainable Technology and Green Mobility',
     venue: {
