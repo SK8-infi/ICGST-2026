@@ -3,14 +3,13 @@ export const ROUTES = {
     HOME: '/',
     ABOUT: '/about',
     TRACKS: '/call-for-papers/tracks',
-    GUIDELINES: '/call-for-papers/guidelines',
-    CAMERA_READY: '/call-for-papers/camera-ready',
     IMPORTANT_DATES: '/important-dates',
     REGISTRATION: '/registration',
     TRAVEL_VISA: '/travel/visa',
     TRAVEL_VENUE: '/travel/venue',
     TRAVEL_EXPLORE: '/travel/explore-gwalior',
-    PAPER_SUBMISSION: '/paper-submission',
+    // Single source of truth for author submission instructions (submission + camera-ready)
+    PAPER_SUBMISSION: '/call-for-papers/paper-submission',
     COMMITTEE: '/committee',
     CONTACT: '/contact',
 };
@@ -19,6 +18,7 @@ export const ROUTES = {
 export const NAV_ITEMS = [
     { label: 'Home', path: ROUTES.HOME },
     { label: 'About', path: ROUTES.ABOUT },
+    { label: 'Call for Papers', path: ROUTES.TRACKS },
     { label: 'Paper Submission', path: ROUTES.PAPER_SUBMISSION },
     { label: 'Registration', path: ROUTES.REGISTRATION },
     { label: 'Committee', path: ROUTES.COMMITTEE },

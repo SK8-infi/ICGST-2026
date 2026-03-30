@@ -73,8 +73,8 @@ export const importantDates = [
         link: 'coming_soon',
     },
     {
-        activity: 'Full Paper Submission',
-        date: 'November 15, 2026 (AOE – Anywhere on Earth)',
+        activity: 'Conference Date',
+        date: 'November 15, 2026',
         isDeadline: true,
         link: 'https://cmt3.research.microsoft.com/ICGST2026/Submission/Index',
     },

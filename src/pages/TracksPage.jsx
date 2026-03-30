@@ -16,20 +16,6 @@ export default function TracksPage() {
                 subtitle={`Submit your research across our ${tracks.length} technical tracks covering green and sustainable technologies.`}
             />
 
-            {/* Technical Tracks */}
-            <SectionContainer background="white" className="border-b border-gray-100">
-                <SectionHeader
-                    title="Technical Tracks"
-                    subtitle="The conference is organized across multiple technical tracks and parallel sessions"
-                    centered={true}
-                />
-                <div className="flex flex-col gap-6 max-w-5xl mx-auto px-4">
-                    {tracks.map((track, index) => (
-                        <TrackCard key={track.id} track={track} variant="functional" index={index} />
-                    ))}
-                </div>
-            </SectionContainer>
-            
             {/* Dates Table */}
             <SectionContainer background="light">
                 <SectionHeader
@@ -102,6 +88,22 @@ export default function TracksPage() {
                             <span className="w-2 h-2 rounded-full bg-blue-500"></span>
                             Notification
                         </div>
+                    </div>
+                </div>
+            </SectionContainer>
+
+            {/* Technical Tracks */}
+            <SectionContainer background="white" className="border-b border-gray-100">
+                <SectionHeader
+                    title="Technical Tracks"
+                    subtitle="The conference is organized across multiple technical tracks and parallel sessions"
+                    centered={true}
+                />
+                <div className="max-w-6xl mx-auto px-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        {tracks.map((track, index) => (
+                            <TrackCard key={track.id} track={track} variant="functional" index={index} />
+                        ))}
                     </div>
                 </div>
             </SectionContainer>

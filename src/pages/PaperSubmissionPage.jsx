@@ -7,18 +7,19 @@ export default function PaperSubmissionPage() {
     return (
         <div className="pt-16 pb-16">
             <HeroSection
-                title="Paper Submission"
-                subtitle="How to Submit paper in ICGST-2026"
+                title="Paper Submission & Camera-Ready"
+                subtitle="Everything you need from initial submission to final upload"
                 isHomePage={false}
             />
             <SectionContainer background="white">
                 <div className="max-w-4xl mx-auto px-4 prose prose-slate prose-blue lg:prose-lg mt-8">
                     <p>
-                        Prospective authors are encouraged to submit full papers in PDF format not exceeding 6 pages in double-column includes all figures, tables, and references. The paper must follow the standard IEEE template. Papers not compliant with the IEEE template including appropriate referencing or exceeding the page limit will be returned without review. Only original papers that have not been published or submitted for publication elsewhere will be considered. The paper must clearly indicate the research area, main results, and contributions. All accepted and presented papers will undergo submission for possible inclusion into IEEE Xplore subject to meeting IEEE Xplore’s scope and quality requirements.
+                        Prospective authors are invited to submit original technical papers to ICGST-2026. Submissions must follow the standard IEEE conference template and be written in English.
+                        Accepted and presented papers will be submitted to IEEE for possible inclusion in IEEE Xplore (subject to IEEE scope and quality checks).
                     </p>
 
                     <p>
-                        Submission of a scientific paper is considered a commitment that, upon acceptance, authors will submit their camera-ready version for inclusion in the formal proceedings and will present the paper at the conference. Each accepted contribution must have at least one paid registration by the time the camera-ready paper is submitted for inclusion in the proceedings. ICGST reserves the right to remove from IEEE Xplore papers and posters not presented at the symposium.
+                        By submitting, authors commit that (if accepted) they will prepare a compliant camera-ready version, complete the required copyright steps, and present the work at the conference.
                     </p>
 
                     <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg my-8">
@@ -40,7 +41,7 @@ export default function PaperSubmissionPage() {
                         <div className="bg-white border border-slate-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                             <h3 className="text-lg font-bold text-slate-900 mt-0 mb-2">IEEE Templates</h3>
                             <p className="text-slate-600 text-sm mb-4">
-                                We prefer the submission in LaTeX format. Kindly prepare your paper in LaTeX format for the proper IEEE format.
+                                LaTeX is preferred. Word submissions should use the latest IEEE conference template to avoid conversion issues.
                             </p>
                             <div className="flex gap-3">
                                 <a href="https://template-selector.ieee.org/secure/templateSelector/publicationType" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4">
@@ -67,15 +68,48 @@ export default function PaperSubmissionPage() {
                         </div>
                     </div>
 
-                    <h3 className="px-4 py-2 bg-slate-100 rounded-lg inline-block text-xl font-bold text-slate-900 mb-4 inline-block">Review Process</h3>
+                    <h3 className="px-4 py-2 bg-slate-100 rounded-lg inline-block text-xl font-bold text-slate-900 mb-4">Submission Guidelines</h3>
+                    <ul className="text-slate-700 list-disc pl-6">
+                        <li><strong>Page limit:</strong> Maximum of <strong>6 pages</strong> (10-point, IEEE two-column), including figures, tables, and references.</li>
+                        <li><strong>Originality:</strong> Only original work not published or under review elsewhere will be considered.</li>
+                        <li><strong>Author list:</strong> Ensure all co-authors and affiliations are correctly listed at initial submission.</li>
+                        <li><strong>Format:</strong> Use the IEEE conference template (LaTeX preferred; Word allowed with the latest template).</li>
+                        <li><strong>Presentation:</strong> Registered papers must be presented at the conference for IEEE submission.</li>
+                        <li><strong>Review:</strong> Single-blind review. Papers with poor quality or a high similarity index may be desk rejected.</li>
+                    </ul>
+
+                    <h3 className="px-4 py-2 bg-slate-100 rounded-lg inline-block text-xl font-bold text-slate-900 mt-8 mb-4">Camera-Ready (After Acceptance)</h3>
+                    <p className="text-slate-700">
+                        If your paper is accepted, prepare the final camera-ready PDF in the IEEE format, address all reviewer comments, and complete the required checks and forms in Microsoft CMT.
+                    </p>
+                    <div className="not-prose grid gap-4 my-6">
+                        <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+                            <h4 className="text-base font-bold text-slate-900 m-0">Camera-ready checklist</h4>
+                            <ul className="mt-3 space-y-2 text-slate-700 list-disc pl-6">
+                                <li>IEEE two-column A4 conference format; maximum <strong>6 pages</strong> (unless additional pages are explicitly permitted by the organizers).</li>
+                                <li>Address all reviewer comments visible in CMT.</li>
+                                <li>Similarity index should be within the conference limits (as announced on CMT / author instructions).</li>
+                                <li>Upload the final PDF to CMT with the required naming convention (shown in the camera-ready submission section on CMT).</li>
+                            </ul>
+                        </div>
+                        <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+                            <h4 className="text-base font-bold text-slate-900 m-0">PDF eXpress & copyright</h4>
+                            <ul className="mt-3 space-y-2 text-slate-700 list-disc pl-6">
+                                <li>Validate the final PDF using <a href="https://ieee-pdf-express.org/" target="_blank" rel="noopener noreferrer">IEEE PDF eXpress</a> if required for this conference (details are provided in CMT / author instructions).</li>
+                                <li>Complete the IEEE electronic copyright form (ECF) via the link provided in CMT after uploading the camera-ready PDF.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3 className="px-4 py-2 bg-slate-100 rounded-lg inline-block text-xl font-bold text-slate-900 mt-8 mb-4">Review Process</h3>
                     <p>
-                        The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support. Accepted papers will be assigned to a regular technical session. All papers will go through a rigorous, single-blind reviewing process.
+                        The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support. All papers go through a rigorous, single-blind reviewing process.
                     </p>
                     <p>
                         At least one author of an accepted paper will have to register at the conference in order to submit the final version. All accepted papers presented at the conference will be published in the conference proceeding and submitted to IEEE Xplore for publication subject to their norms. They should satisfy the requirements given in the publication policy.
                     </p>
                     <p>
-                        The <strong>E-Copyright form</strong> must be submitted by the author or presenter at the time of registration.
+                        The <strong>IEEE electronic copyright form (ECF)</strong> must be completed as instructed in CMT.
                     </p>
 
                     <h3 className="px-4 py-2 bg-slate-100 rounded-lg inline-block text-xl font-bold text-slate-900 mt-8 mb-4 inline-block">IEEE Policies</h3>

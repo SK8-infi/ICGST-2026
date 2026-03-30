@@ -5,7 +5,6 @@ import NavLinks from './NavLinks';
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isTravelDropdownOpen, setIsTravelDropdownOpen] = useState(false);
     const location = useLocation();
     const navigate = useNavigate();
@@ -19,7 +18,6 @@ export default function Navbar() {
         setTimeout(() => {
             navigate(path);
             setIsMenuOpen(false);
-            setIsDropdownOpen(false);
         }, 300);
     };
 
@@ -85,36 +83,8 @@ export default function Navbar() {
 
                             {/* Desktop Navigation */}
                             <div className="hidden lg:flex items-center space-x-4">
-                                <NavLinks mobile={false} items={NAV_ITEMS.slice(0, 2)} />
-
-                                {/* Call for Papers Dropdown */}
-                                <div className="relative group">
-                                    <button className="flex items-center px-1 py-1 xl:px-2 text-[10px] xl:text-xs font-medium tracking-wide uppercase text-slate-700 hover:text-blue-700 transition-colors">
-                                        Call for Papers
-                                        <svg className="w-3 h-3 ml-0.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                        </svg>
-                                    </button>
-                                    {/* Invisible bridge to prevent menu closing when moving cursor */}
-                                    <div className="absolute top-full left-0 w-full h-2 bg-transparent"></div>
-
-                                    <div className="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left z-50 border border-slate-100 ring-1 ring-black ring-opacity-5">
-                                        <div className="py-1">
-                                            <Link to={ROUTES.TRACKS} className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-700">
-                                                Conference Tracks & Schedule
-                                            </Link>
-                                            <Link to={ROUTES.GUIDELINES} className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-700">
-                                                Submission Guidelines
-                                            </Link>
-                                            <Link to={ROUTES.CAMERA_READY} className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-700">
-                                                Camera Ready Submission
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Right Links: Paper Submission, Registration */}
-                                <NavLinks mobile={false} items={NAV_ITEMS.slice(2, 4)} />
+                                {/* Home, About, Call for Papers, Paper Submission */}
+                                <NavLinks mobile={false} items={NAV_ITEMS.slice(0, 4)} />
 
                                 {/* Travel Dropdown */}
                                 <div className="relative group">
@@ -201,59 +171,27 @@ export default function Navbar() {
 
                             {/* Drawer Content — simple centered list */}
                             <div className="flex-1 overflow-y-auto py-6 flex flex-col items-center">
-                                {/* Home */}
+                                {/* Main tabs */}
                                 <NavLink to={ROUTES.HOME} onClick={() => setIsMenuOpen(false)}
                                     style={{ color: 'white' }}
                                     className={({ isActive }) => `py-3 text-base font-medium transition-colors !text-white ${isActive ? 'font-bold' : ''}`}>
                                     Home
                                 </NavLink>
-
-                                {/* About */}
                                 <NavLink to={ROUTES.ABOUT} onClick={() => setIsMenuOpen(false)}
                                     style={{ color: 'white' }}
                                     className={({ isActive }) => `py-3 text-base font-medium transition-colors !text-white ${isActive ? 'font-bold' : ''}`}>
                                     About
                                 </NavLink>
-
-                                {/* Call for Papers with chevron */}
-                                <button
-                                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                                <NavLink to={ROUTES.TRACKS} onClick={() => setIsMenuOpen(false)}
                                     style={{ color: 'white' }}
-                                    className="flex items-center justify-center gap-2 py-3 text-base font-medium !text-white transition-colors"
-                                >
+                                    className={({ isActive }) => `py-3 text-base font-medium transition-colors !text-white ${isActive ? 'font-bold' : ''}`}>
                                     Call for Papers
-                                    <svg className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                    </svg>
-                                </button>
-                                {isDropdownOpen && (
-                                    <div className="flex flex-col items-center gap-0 pb-1">
-                                        <NavLink to={ROUTES.TRACKS} onClick={() => setIsMenuOpen(false)}
-                                            style={{ color: 'rgba(255, 255, 255, 0.8)' }}
-                                            className={({ isActive }) => `py-2 text-sm transition-colors !text-white/80 ${isActive ? '!text-white font-bold' : 'hover:!text-white'}`}>
-                                            Conference Tracks & Schedule
-                                        </NavLink>
-                                        <NavLink to={ROUTES.GUIDELINES} onClick={() => setIsMenuOpen(false)}
-                                            style={{ color: 'rgba(255, 255, 255, 0.8)' }}
-                                            className={({ isActive }) => `py-2 text-sm transition-colors !text-white/80 ${isActive ? '!text-white font-bold' : 'hover:!text-white'}`}>
-                                            Submission Guidelines
-                                        </NavLink>
-                                        <NavLink to={ROUTES.CAMERA_READY} onClick={() => setIsMenuOpen(false)}
-                                            style={{ color: 'rgba(255, 255, 255, 0.8)' }}
-                                            className={({ isActive }) => `py-2 text-sm transition-colors !text-white/80 ${isActive ? '!text-white font-bold' : 'hover:!text-white'}`}>
-                                            Camera Ready Submission
-                                        </NavLink>
-                                    </div>
-                                )}
-
-                                {/* Paper Submission */}
+                                </NavLink>
                                 <NavLink to={ROUTES.PAPER_SUBMISSION} onClick={() => setIsMenuOpen(false)}
                                     style={{ color: 'white' }}
                                     className={({ isActive }) => `py-3 text-base font-medium transition-colors !text-white ${isActive ? 'font-bold' : ''}`}>
                                     Paper Submission
                                 </NavLink>
-
-                                {/* Registration */}
                                 <NavLink to={ROUTES.REGISTRATION} onClick={() => setIsMenuOpen(false)}
                                     style={{ color: 'white' }}
                                     className={({ isActive }) => `py-3 text-base font-medium transition-colors !text-white ${isActive ? 'font-bold' : ''}`}>
