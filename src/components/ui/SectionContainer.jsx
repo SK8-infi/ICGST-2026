@@ -30,7 +30,7 @@ export function SectionHeader({
 }) {
     return (
         <div className={`mb-12 ${centered ? 'text-center' : ''} ${className}`}>
-            <h2 className="text-5xl md:text-6xl font-black text-neutral-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 md:mb-6">
                 {title}
             </h2>
             {subtitle && (

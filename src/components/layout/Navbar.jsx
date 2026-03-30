@@ -40,7 +40,7 @@ export default function Navbar() {
                             <div className="bg-white rounded-full p-[3px] w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shadow-lg">
                                 <img
                                     src="https://lh3.googleusercontent.com/d/1LNtqXOXfvsyYZaclWSc2QM-yzpxov1vw"
-                                    alt="ABV-IIITM Gwalior Logo"
+                                    alt="ABV-IIITM, Gwalior Logo"
                                     className="w-full h-full object-contain"
                                 />
                             </div>

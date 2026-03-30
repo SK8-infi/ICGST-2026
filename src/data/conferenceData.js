@@ -7,7 +7,7 @@ export const conferenceInfo = {
     organizedBy: 'Center of Excellence — Sustainable Technology and Green Mobility',
     venue: {
         name: 'Atal Bihari Vajpayee – Indian Institute of Information Technology and Management (ABV-IIITM)',
-        shortName: 'ABV-IIITM Gwalior',
+        shortName: 'ABV-IIITM, Gwalior',
         address: 'Morena Link Road, Gwalior, Madhya Pradesh 474015, India',
         mapEmbedUrl: 'https://maps.google.com/maps?q=ABV-IIITM+Gwalior+%4026.2485,78.1746&z=15&output=embed',
     },
@@ -32,7 +32,7 @@ export const conferenceScope = `The conference covers a broad spectrum of green,
 export const aboutInstitute = {
     iiitm: `Atal Bihari Vajpayee – Indian Institute of Information Technology & Management (ABV-IIITM), Gwalior, was established in 1997 by the Ministry of Human Resource Development, Government of India. It is a premier institute known for excellence in Information Technology and Management education. Located in Gwalior, Madhya Pradesh, the institute promotes a vibrant academic culture rooted in research and innovation. ABV-IIITM maintains strong industry linkages, encouraging real-world learning and collaboration. It has been accredited with a NAAC 'A' grade and holds the status of an Institute of National Importance. The institute strives to create future-ready professionals through cutting-edge curriculum and interdisciplinary learning. Its mission is to integrate technology, management, and research for societal and industrial impact.`,
 
-    coe: `The Center of Excellence — Sustainable Technology and Green Mobility at ABV-IIITM Gwalior focuses on advancing research and innovation in sustainable technologies, green manufacturing, electric mobility, clean energy systems, and circular economy. The center serves as a hub for interdisciplinary collaboration, bridging engineering, management, and policy domains to address critical challenges in sustainability and environmental stewardship.`,
+    coe: `The Center of Excellence — Sustainable Technology and Green Mobility at ABV-IIITM, Gwalior focuses on advancing research and innovation in sustainable technologies, green manufacturing, electric mobility, clean energy systems, and circular economy. The center serves as a hub for interdisciplinary collaboration, bridging engineering, management, and policy domains to address critical challenges in sustainability and environmental stewardship.`,
 };
 
 export const importantDates = [

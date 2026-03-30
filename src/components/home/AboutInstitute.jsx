@@ -7,14 +7,14 @@ import { aboutInstitute } from '../../data/conferenceData';
 export default function AboutInstitute() {
     return (
         <div className="space-y-1">
-            {/* About ABV-IIITM Gwalior */}
+            {/* About ABV-IIITM, Gwalior */}
             <SectionContainer background="white" className="!pt-16 !pb-12">
                 <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
                     {/* Text Content */}
                     <div className="order-2 lg:order-2 space-y-6">
                         <div className="space-y-2">
                             <h2 className="text-2xl sm:text-3xl font-bold text-neutral-900">
-                                About ABV-IIITM Gwalior
+                                About ABV-IIITM, Gwalior
                             </h2>
                             <div className="w-16 sm:w-20 h-1.5 bg-primary-600 rounded-full" />
                         </div>
@@ -33,7 +33,7 @@ export default function AboutInstitute() {
                                 <div className="absolute inset-0 bg-primary-900/10 group-hover:bg-transparent transition-colors duration-500" />
                                 <img
                                     src="https://lh3.googleusercontent.com/d/1bDYy_ReDauwg-bWK_cXmcHeNcSC7EWVh"
-                                    alt="ABV-IIITM Gwalior"
+                                    alt="ABV-IIITM, Gwalior"
                                     className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                                 />
                             </div>
@@ -103,7 +103,7 @@ export default function AboutInstitute() {
                                 </svg>
                             }
                             title="3-Day Conference"
-                            description="23–25 October 2026 at ABV-IIITM Gwalior"
+                            description="23–25 October 2026 at ABV-IIITM, Gwalior"
                             link={ROUTES.IMPORTANT_DATES}
                         />
                         <HighlightCard

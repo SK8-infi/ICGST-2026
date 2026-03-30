@@ -27,7 +27,7 @@ export default function Footer() {
                             <p className="!text-white text-xs font-bold uppercase tracking-wider mb-2 transition-colors text-opacity-80">Organized By</p>
                             <p className="!text-white font-semibold text-sm leading-snug">
                                 {conferenceInfo.organizedBy}<br />
-                                <span className="!text-white font-normal text-opacity-90">ABV-IIITM Gwalior</span>
+                                <span className="!text-white font-normal text-opacity-90">ABV-IIITM, Gwalior</span>
                             </p>
                         </div>
                     </div>
@@ -178,7 +178,7 @@ export default function Footer() {
                             className="!text-white hover:text-[#4da6ff] transition-colors flex items-center gap-2"
                         >
                             <span className="w-px h-2.5 bg-white block"></span>
-                            ABV-IIITM Gwalior
+                            ABV-IIITM, Gwalior
                         </a>
                     </div>
                 </div>

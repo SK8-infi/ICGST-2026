@@ -14,7 +14,7 @@ export default function TravelVisaPage() {
                     {/* Welcome */}
                     <div className="prose prose-lg max-w-none text-slate-600">
                         <p className="text-lg leading-relaxed">
-                            We look forward to welcoming you to <strong>ICGST-2026</strong> at ABV-IIITM Gwalior, India!
+                            We look forward to welcoming you to <strong>ICGST-2026</strong> at ABV-IIITM, Gwalior, India!
                             To ensure a smooth visa application process, please follow the instructions below.
                         </p>
                     </div>
@@ -84,7 +84,7 @@ export default function TravelVisaPage() {
                                     { label: 'Clearance from Ministry of External Affairs (MEA)', desc: 'Political clearance documents from MEA, Government of India (attached in your confirmation email).' },
                                     { label: 'Clearance from Ministry of Home Affairs (MHA)', desc: 'Event clearance documents. Delegates from Afghanistan, Pakistan, Iraq, Sudan, foreigners of Pakistani origin, and stateless persons should contact icgst2026@iiitm.ac.in directly.' },
                                     { label: 'Passport-Sized Photo', desc: 'A recent colour photograph with a white background (specific dimensions as per portal requirements).' },
-                                    { label: 'Accommodation Details', desc: 'Proof of hotel booking or conference accommodation at ABV-IIITM Gwalior.' },
+                                    { label: 'Accommodation Details', desc: 'Proof of hotel booking or conference accommodation at ABV-IIITM, Gwalior.' },
                                     { label: 'Flight Itinerary', desc: 'A copy of your return/onward flight itinerary.' },
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-start gap-3 p-4 bg-slate-50 rounded-xl border border-slate-100">

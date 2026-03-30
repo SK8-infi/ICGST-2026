@@ -6,7 +6,7 @@ export default function VenueDirectionsPage() {
         <>
             <HeroSection
                 title="Venue & Directions"
-                subtitle="How to reach ABV-IIITM Gwalior for ICGST-2026"
+                subtitle="How to reach ABV-IIITM, Gwalior for ICGST-2026"
             />
 
             <SectionContainer background="white">
@@ -44,7 +44,7 @@ export default function VenueDirectionsPage() {
                             allowFullScreen=""
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
-                            title="ABV-IIITM Gwalior Location"
+                            title="ABV-IIITM, Gwalior Location"
                         ></iframe>
                     </div>
 
