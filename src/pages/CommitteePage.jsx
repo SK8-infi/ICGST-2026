@@ -23,7 +23,7 @@ export default function CommitteePage() {
                 <SectionHeader
                     title="Honorary General Chairs"
                 />
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <div className="flex flex-wrap justify-center items-stretch gap-6 max-w-7xl mx-auto px-4">
                     {honoraryGeneralChairs.map((member, index) => (
                         <MemberCard key={index} member={member} />
                     ))}
@@ -35,7 +35,7 @@ export default function CommitteePage() {
                 <SectionHeader
                     title="General Chairs"
                 />
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <div className="flex flex-wrap justify-center items-stretch gap-6 max-w-7xl mx-auto px-4">
                     {generalChairs.map((member, index) => (
                         <MemberCard key={index} member={member} />
                     ))}
@@ -47,7 +47,7 @@ export default function CommitteePage() {
                 <SectionHeader
                     title="Conference Chairs"
                 />
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <div className="flex flex-wrap justify-center items-stretch gap-6 max-w-7xl mx-auto px-4">
                     {conferenceChairs.map((member, index) => (
                         <MemberCard key={index} member={member} />
                     ))}
@@ -59,7 +59,7 @@ export default function CommitteePage() {
                 <SectionHeader
                     title="Conference Co-Chair"
                 />
-                <div className="grid grid-cols-1 gap-6 max-w-md mx-auto">
+                <div className="flex flex-wrap justify-center items-stretch gap-6 max-w-7xl mx-auto px-4">
                     {conferenceCoChairs.map((member, index) => (
                         <MemberCard key={index} member={member} />
                     ))}
@@ -71,7 +71,7 @@ export default function CommitteePage() {
                 <SectionHeader
                     title="Organizing Chairs"
                 />
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div className="flex flex-wrap justify-center items-stretch gap-6 max-w-7xl mx-auto px-4">
                     {organizingChairs.map((member, index) => (
                         <MemberCard key={index} member={member} />
                     ))}
@@ -92,31 +92,61 @@ function MemberCard({ member }) {
             .slice(0, 2);
 
     return (
-        <div className="bg-white rounded-xl shadow-sm border border-neutral-100 p-8 text-center hover:shadow-md transition-shadow h-full flex flex-col items-center justify-center">
+        <div className="flex-1 w-full min-w-[260px] max-w-[280px] bg-white rounded-xl shadow-sm border border-neutral-100 p-6 xl:p-8 text-center hover:shadow-md transition-shadow flex flex-col items-center justify-start">
             {/* Avatar */}
-            <div
-                className="w-52 h-52 rounded-2xl mb-6 mx-auto flex items-center justify-center text-4xl font-bold text-white shadow-lg overflow-hidden"
-                style={{ backgroundColor: '#003366' }}
-            >
-                {member.image ? (
-                    <img
-                        src={member.image}
-                        alt={member.name}
-                        className="w-full h-full object-cover rounded-2xl transition-transform duration-500 hover:scale-110"
-                    />
-                ) : (
-                    initials
-                )}
-            </div>
+            {member.profileUrl ? (
+                <a href={member.profileUrl} target="_blank" rel="noopener noreferrer" className="block relative group flex-shrink-0">
+                    <div
+                        className="w-24 h-24 xl:w-28 xl:h-28 rounded-2xl mb-4 mx-auto flex items-center justify-center text-2xl xl:text-3xl font-bold text-white shadow-md overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                        style={{ backgroundColor: '#003366' }}
+                    >
+                        {member.image ? (
+                            <img
+                                src={member.image}
+                                alt={member.name}
+                                onError={(e) => {
+                                    e.target.onerror = null; // prevents looping
+                                    e.target.style.display = 'none'; // hide broken image
+                                    e.target.parentElement.innerHTML = initials; // fallback to initials
+                                }}
+                                className="w-full h-full object-cover rounded-2xl"
+                            />
+                        ) : (
+                            initials
+                        )}
+                    </div>
+                </a>
+            ) : (
+                <div
+                    className="w-24 h-24 xl:w-28 xl:h-28 rounded-2xl mb-4 mx-auto flex items-center justify-center text-2xl xl:text-3xl font-bold text-white shadow-md overflow-hidden flex-shrink-0"
+                    style={{ backgroundColor: '#003366' }}
+                >
+                    {member.image ? (
+                        <img
+                            src={member.image}
+                            alt={member.name}
+                            className="w-full h-full object-cover rounded-2xl transition-transform duration-500 hover:scale-110"
+                        />
+                    ) : (
+                        initials
+                    )}
+                </div>
+            )}
 
             {/* Name */}
-            <h3 className="text-xl font-bold text-neutral-900 mb-2">{member.name}</h3>
+            {member.profileUrl ? (
+                <a href={member.profileUrl} target="_blank" rel="noopener noreferrer" className="text-xl font-bold text-neutral-900 mb-2 hover:text-primary-600 transition-colors">
+                    {member.name}
+                </a>
+            ) : (
+                <h3 className="text-xl font-bold text-neutral-900 mb-2">{member.name}</h3>
+            )}
 
             {/* Designation */}
-            <p className="text-sm font-bold text-primary-700 uppercase tracking-wider mb-3">{member.designation}</p>
+            <p className="text-xs xl:text-sm font-bold text-primary-700 uppercase tracking-wider mb-3 leading-tight">{member.designation}</p>
 
             {/* Affiliation */}
-            <p className="text-base text-neutral-600">{member.affiliation}</p>
+            <p className="text-sm xl:text-base text-neutral-600 leading-snug">{member.affiliation}</p>
 
             {/* Email */}
             {member.email && (
