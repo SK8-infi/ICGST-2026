@@ -1,18 +1,18 @@
-import SectionContainer, { SectionHeader } from '../components/ui/SectionContainer';
+import SectionContainer from '../components/ui/SectionContainer';
+import HeroSection from '../components/home/HeroSection';
 import Button from '../components/ui/Button';
 import { ROUTES } from '../constants/routes';
 
 export default function PaperSubmissionPage() {
     return (
-        <div className="pt-24 pb-16">
+        <div className="pt-16 pb-16">
+            <HeroSection
+                title="Paper Submission"
+                subtitle="How to Submit paper in ICGST-2026"
+                isHomePage={false}
+            />
             <SectionContainer background="white">
-                <SectionHeader 
-                    title="Paper Submission" 
-                    subtitle="How to Submit paper in ICGST-2026"
-                    centered={true}
-                />
-                
-                <div className="max-w-4xl mx-auto px-4 prose prose-slate prose-blue lg:prose-lg">
+                <div className="max-w-4xl mx-auto px-4 prose prose-slate prose-blue lg:prose-lg mt-8">
                     <p>
                         Prospective authors are encouraged to submit full papers in PDF format not exceeding 6 pages in double-column includes all figures, tables, and references. The paper must follow the standard IEEE template. Papers not compliant with the IEEE template including appropriate referencing or exceeding the page limit will be returned without review. Only original papers that have not been published or submitted for publication elsewhere will be considered. The paper must clearly indicate the research area, main results, and contributions. All accepted and presented papers will undergo submission for possible inclusion into IEEE Xplore subject to meeting IEEE Xplore’s scope and quality requirements.
                     </p>
