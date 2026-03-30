@@ -17,6 +17,6 @@ export const latestUpdates = [
     {
         text: "Decision for all manuscripts has been sent through email and is available on Microsoft CMT portal.",
         important: true,
-        link: "https://cmt3.research.microsoft.com/"
+        link: "https://cmt3.research.microsoft.com/ICGST2026/Submission/Index"
     }
 ];

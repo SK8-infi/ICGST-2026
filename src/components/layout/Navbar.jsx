@@ -101,7 +101,7 @@ export default function Navbar() {
                                     <div className="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left z-50 border border-slate-100 ring-1 ring-black ring-opacity-5">
                                         <div className="py-1">
                                             <Link to={ROUTES.TRACKS} className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-700">
-                                                Conference Tracks
+                                                Conference Tracks & Schedule
                                             </Link>
                                             <Link to={ROUTES.GUIDELINES} className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-700">
                                                 Submission Guidelines
@@ -113,7 +113,7 @@ export default function Navbar() {
                                     </div>
                                 </div>
 
-                                {/* Right Links: Important Dates, Registration */}
+                                {/* Right Links: Paper Submission, Registration */}
                                 <NavLinks mobile={false} items={NAV_ITEMS.slice(2, 4)} />
 
                                 {/* Travel Dropdown */}
@@ -145,7 +145,7 @@ export default function Navbar() {
 
                                 {/* Submit Button */}
                                 <a
-                                    href="https://cmt3.research.microsoft.com/"
+                                    href="https://cmt3.research.microsoft.com/ICGST2026/Submission/Index"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="ml-4 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium !text-white bg-[#002855] hover:bg-[#001a3a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#002855] transition-all transform hover:scale-105"
@@ -231,7 +231,7 @@ export default function Navbar() {
                                         <NavLink to={ROUTES.TRACKS} onClick={() => setIsMenuOpen(false)}
                                             style={{ color: 'rgba(255, 255, 255, 0.8)' }}
                                             className={({ isActive }) => `py-2 text-sm transition-colors !text-white/80 ${isActive ? '!text-white font-bold' : 'hover:!text-white'}`}>
-                                            Conference Tracks
+                                            Conference Tracks & Schedule
                                         </NavLink>
                                         <NavLink to={ROUTES.GUIDELINES} onClick={() => setIsMenuOpen(false)}
                                             style={{ color: 'rgba(255, 255, 255, 0.8)' }}
@@ -241,16 +241,16 @@ export default function Navbar() {
                                         <NavLink to={ROUTES.CAMERA_READY} onClick={() => setIsMenuOpen(false)}
                                             style={{ color: 'rgba(255, 255, 255, 0.8)' }}
                                             className={({ isActive }) => `py-2 text-sm transition-colors !text-white/80 ${isActive ? '!text-white font-bold' : 'hover:!text-white'}`}>
-                                            Camera Ready
+                                            Camera Ready Submission
                                         </NavLink>
                                     </div>
                                 )}
 
-                                {/* Important Dates */}
-                                <NavLink to={ROUTES.IMPORTANT_DATES} onClick={() => setIsMenuOpen(false)}
+                                {/* Paper Submission */}
+                                <NavLink to={ROUTES.PAPER_SUBMISSION} onClick={() => setIsMenuOpen(false)}
                                     style={{ color: 'white' }}
                                     className={({ isActive }) => `py-3 text-base font-medium transition-colors !text-white ${isActive ? 'font-bold' : ''}`}>
-                                    Important Dates
+                                    Paper Submission
                                 </NavLink>
 
                                 {/* Registration */}
@@ -309,7 +309,7 @@ export default function Navbar() {
                             {/* Drawer Footer */}
                             <div className="px-6 py-4 border-t border-white/10">
                                 <a
-                                    href="https://cmt3.research.microsoft.com/"
+                                    href="https://cmt3.research.microsoft.com/ICGST2026/Submission/Index"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center w-full px-4 py-3 rounded-lg text-sm font-bold text-[#002855] bg-white hover:bg-gray-100 transition-all"

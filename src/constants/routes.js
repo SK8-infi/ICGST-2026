@@ -10,6 +10,7 @@ export const ROUTES = {
     TRAVEL_VISA: '/travel/visa',
     TRAVEL_VENUE: '/travel/venue',
     TRAVEL_EXPLORE: '/travel/explore-gwalior',
+    PAPER_SUBMISSION: '/paper-submission',
     COMMITTEE: '/committee',
     CONTACT: '/contact',
 };
@@ -18,7 +19,7 @@ export const ROUTES = {
 export const NAV_ITEMS = [
     { label: 'Home', path: ROUTES.HOME },
     { label: 'About', path: ROUTES.ABOUT },
-    { label: 'Important Dates', path: ROUTES.IMPORTANT_DATES },
+    { label: 'Paper Submission', path: ROUTES.PAPER_SUBMISSION },
     { label: 'Registration', path: ROUTES.REGISTRATION },
     { label: 'Committee', path: ROUTES.COMMITTEE },
     { label: 'Contact Us', path: ROUTES.CONTACT },

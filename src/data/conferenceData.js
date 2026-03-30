@@ -40,35 +40,42 @@ export const importantDates = [
         activity: 'Call for Paper',
         date: 'March 15, 2026',
         isDeadline: false,
+        link: null,
     },
     {
         activity: 'Last Date of Paper Submission',
         date: 'May 15, 2026',
         isDeadline: true,
+        link: 'https://cmt3.research.microsoft.com/ICGST2026/Submission/Index',
     },
     {
         activity: 'Acceptance Notification',
         date: 'July 15, 2026',
         isDeadline: false,
+        link: null,
     },
     {
         activity: 'Camera-Ready Submission',
         date: 'July 30, 2026',
         isDeadline: true,
+        link: 'https://cmt3.research.microsoft.com/ICGST2026/Submission/Index',
     },
     {
         activity: 'Early Bird Registration Closed',
         date: 'August 31, 2026',
         isDeadline: true,
+        link: 'coming_soon',
     },
     {
         activity: 'Regular Registration Closed',
         date: 'October 1, 2026',
         isDeadline: true,
+        link: 'coming_soon',
     },
     {
         activity: 'Full Paper Submission',
         date: 'November 15, 2026 (AOE – Anywhere on Earth)',
         isDeadline: true,
+        link: 'https://cmt3.research.microsoft.com/ICGST2026/Submission/Index',
     },
 ];

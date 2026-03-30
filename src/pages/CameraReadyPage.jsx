@@ -154,7 +154,7 @@ export default function CameraReadyPage() {
                             <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
                                 <h4 className="text-lg font-bold text-slate-800 mb-4">Quick Access</h4>
                                 <div className="space-y-3">
-                                    <a href="https://cmt3.research.microsoft.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors group">
+                                    <a href="https://cmt3.research.microsoft.com/ICGST2026/Submission/Index" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors group">
                                         <svg className="w-5 h-5 text-blue-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" /></svg>
                                         <span className="font-medium">Reviewer Comments</span>
                                     </a>
