@@ -12,7 +12,7 @@ export default function TracksPage() {
             {/* Page Header */}
             <HeroSection
                 title="Call for Papers"
-                subtitle="Submit your research across our 9 technical tracks covering green and sustainable technologies."
+                subtitle={`Submit your research across our ${tracks.length} technical tracks covering green and sustainable technologies.`}
             />
 
             {/* Technical Tracks */}
@@ -22,7 +22,7 @@ export default function TracksPage() {
                     subtitle="The conference is organized across multiple technical tracks and parallel sessions"
                     centered={true}
                 />
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto px-4">
+                <div className="flex flex-col gap-6 max-w-5xl mx-auto px-4">
                     {tracks.map((track, index) => (
                         <TrackCard key={track.id} track={track} variant="functional" index={index} />
                     ))}

@@ -42,9 +42,17 @@ export default function TrackCard({ track, variant = 'default', index }) {
                         }`}>
                         {track.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        {track.description}
-                    </p>
+                    <div className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                        {Array.isArray(track.description) ? (
+                            <ul className="list-disc pl-5 mt-2 space-y-1.5">
+                                {track.description.map((point, idx) => (
+                                    <li key={idx} className="pl-1 text-gray-700">{point}</li>
+                                ))}
+                            </ul>
+                        ) : (
+                            <p>{track.description}</p>
+                        )}
+                    </div>
                 </div>
             </div>
         </Card>
