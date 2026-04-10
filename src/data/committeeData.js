@@ -3,7 +3,7 @@
 export const honoraryGeneralChairs = [
     {
         name: 'Prof. Sri Niwas Singh',
-        designation: 'Honorary General Chair',
+        designation: null,
         affiliation: 'ABV-IIITM, Gwalior',
         email: null,
         profileUrl: 'https://www.iiitm.ac.in/index.php/en/component/splms/teacher/prof-sri-niwas',
@@ -14,7 +14,7 @@ export const honoraryGeneralChairs = [
 export const generalChairs = [
     {
         name: 'Prof. GS Tomar',
-        designation: 'General Chair',
+        designation: null,
         affiliation: 'Rajkiya Engineering College Sonbhadra (REC Sonbhadra), Uttar Pradesh, India',
         email: null,
         profileUrl: 'https://www.linkedin.com/in/prof-geetam-tomar-73ab7313/',
@@ -22,7 +22,7 @@ export const generalChairs = [
     },
     {
         name: 'Prof. Manisha Pattanaik',
-        designation: 'General Chair',
+        designation: null,
         affiliation: 'ABV-IIITM, Gwalior',
         email: null,
         profileUrl: 'https://www.iiitm.ac.in/index.php/en/component/splms/teacher/Dr.ManishaPattanaik',
@@ -33,7 +33,7 @@ export const generalChairs = [
 export const conferenceChairs = [
     {
         name: 'Dr. Vinay Singh',
-        designation: 'Conference Chair',
+        designation: null,
         affiliation: 'ABV-IIITM, Gwalior',
         email: null,
         profileUrl: 'https://www.iiitm.ac.in/index.php/en/component/splms/teacher/Dr.VinaySingh',
@@ -41,7 +41,7 @@ export const conferenceChairs = [
     },
     {
         name: 'Dr. Pinku Ranjan',
-        designation: 'Conference Chair',
+        designation: null,
         affiliation: 'ABV-IIITM, Gwalior',
         email: null,
         profileUrl: 'https://www.iiitm.ac.in/index.php/en/component/splms/teacher/Dr.PINKURANJAN',
@@ -52,7 +52,7 @@ export const conferenceChairs = [
 export const conferenceCoChairs = [
     {
         name: 'Dr. Yadunath Pathak',
-        designation: 'Conference Co-Chair',
+        designation: null,
         affiliation: 'Maulana Azad National Institute of Technology (MANIT), Bhopal',
         email: null,
         profileUrl: 'https://www.manit.ac.in/content/dr-yadunath-pathak',
@@ -63,7 +63,7 @@ export const conferenceCoChairs = [
 export const organizingChairs = [
     {
         name: 'Dr. Vijaypal Singh Rathor',
-        designation: 'Organizing Chair',
+        designation: null,
         affiliation: 'ABV-IIITM, Gwalior',
         email: null,
         profileUrl: 'https://www.iiitm.ac.in/index.php/en/component/splms/teacher/Dr.Vijaypal',
@@ -71,7 +71,7 @@ export const organizingChairs = [
     },
     {
         name: 'Dr. Rohit Kumar',
-        designation: 'Organizing Chair',
+        designation: null,
         affiliation: 'ABV-IIITM, Gwalior',
         email: null,
         profileUrl: 'https://www.iiitm.ac.in/index.php/en/component/splms/teacher/Dr.Rohit',
@@ -79,7 +79,7 @@ export const organizingChairs = [
     },
     {
         name: 'Dr. Neelesh Yadav',
-        designation: 'Organizing Chair',
+        designation: null,
         affiliation: 'ABV-IIITM, Gwalior',
         email: null,
         profileUrl: 'https://www.iiitm.ac.in/index.php/en/component/splms/teacher/DrNeelesh',
@@ -87,7 +87,7 @@ export const organizingChairs = [
     },
     {
         name: 'Dr. Vineet Singh',
-        designation: 'Organizing Chair',
+        designation: null,
         affiliation: 'NIT Patna',
         email: null,
         profileUrl: 'https://www.nitp.ac.in/profile/vineet.ec@nitp.ac.in',
