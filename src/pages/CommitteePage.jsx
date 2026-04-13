@@ -6,78 +6,73 @@ import {
     organizingChairs,
 } from '../data/committeeData';
 
-import SectionContainer, { SectionHeader } from '../components/ui/SectionContainer';
 import HeroSection from '../components/home/HeroSection';
 
 export default function CommitteePage() {
     return (
-        <>
+        <div className="bg-neutral-50 pb-16">
             {/* Page Header */}
             <HeroSection
                 title="Organizing Committee"
                 subtitle="Meet the distinguished organizing committee of ICGST-2026."
             />
 
-            {/* Honorary General Chairs */}
-            <SectionContainer background="white">
-                <SectionHeader
-                    title="Honorary General Chairs"
-                />
-                <div className="flex flex-wrap justify-center items-stretch gap-6 max-w-7xl mx-auto px-4">
-                    {honoraryGeneralChairs.map((member, index) => (
-                        <MemberCard key={index} member={member} />
-                    ))}
-                </div>
-            </SectionContainer>
+            <section className="py-8 md:py-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex flex-col gap-10">
+                        {/* Honorary General Chairs */}
+                        <div>
+                            <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-5 text-center">Honorary General Chairs</h2>
+                            <div className="flex flex-wrap justify-center items-stretch gap-4">
+                                {honoraryGeneralChairs.map((member, index) => (
+                                    <MemberCard key={index} member={member} />
+                                ))}
+                            </div>
+                        </div>
 
-            {/* General Chairs */}
-            <SectionContainer background="light">
-                <SectionHeader
-                    title="General Chairs"
-                />
-                <div className="flex flex-wrap justify-center items-stretch gap-6 max-w-7xl mx-auto px-4">
-                    {generalChairs.map((member, index) => (
-                        <MemberCard key={index} member={member} />
-                    ))}
-                </div>
-            </SectionContainer>
+                        {/* General Chairs */}
+                        <div>
+                            <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-5 text-center">General Chairs</h2>
+                            <div className="flex flex-wrap justify-center items-stretch gap-4">
+                                {generalChairs.map((member, index) => (
+                                    <MemberCard key={index} member={member} />
+                                ))}
+                            </div>
+                        </div>
 
-            {/* Conference Chairs */}
-            <SectionContainer background="white">
-                <SectionHeader
-                    title="Conference Chairs"
-                />
-                <div className="flex flex-wrap justify-center items-stretch gap-6 max-w-7xl mx-auto px-4">
-                    {conferenceChairs.map((member, index) => (
-                        <MemberCard key={index} member={member} />
-                    ))}
-                </div>
-            </SectionContainer>
+                        {/* Conference Chairs */}
+                        <div>
+                            <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-5 text-center">Conference Chairs</h2>
+                            <div className="flex flex-wrap justify-center items-stretch gap-4">
+                                {conferenceChairs.map((member, index) => (
+                                    <MemberCard key={index} member={member} />
+                                ))}
+                            </div>
+                        </div>
 
-            {/* Conference Co-Chair */}
-            <SectionContainer background="light">
-                <SectionHeader
-                    title="Conference Co-Chair"
-                />
-                <div className="flex flex-wrap justify-center items-stretch gap-6 max-w-7xl mx-auto px-4">
-                    {conferenceCoChairs.map((member, index) => (
-                        <MemberCard key={index} member={member} />
-                    ))}
-                </div>
-            </SectionContainer>
+                        {/* Conference Co-Chair */}
+                        <div>
+                            <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-5 text-center">Conference Co-Chair</h2>
+                            <div className="flex flex-wrap justify-center items-stretch gap-4">
+                                {conferenceCoChairs.map((member, index) => (
+                                    <MemberCard key={index} member={member} />
+                                ))}
+                            </div>
+                        </div>
 
-            {/* Organizing Chairs */}
-            <SectionContainer background="white">
-                <SectionHeader
-                    title="Organizing Chairs"
-                />
-                <div className="flex flex-wrap justify-center items-stretch gap-6 max-w-7xl mx-auto px-4">
-                    {organizingChairs.map((member, index) => (
-                        <MemberCard key={index} member={member} />
-                    ))}
+                        {/* Organizing Chairs */}
+                        <div>
+                            <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-5 text-center">Organizing Chairs</h2>
+                            <div className="flex flex-wrap justify-center items-stretch gap-4">
+                                {organizingChairs.map((member, index) => (
+                                    <MemberCard key={index} member={member} />
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </SectionContainer>
-        </>
+            </section>
+        </div>
     );
 }
 
@@ -92,12 +87,12 @@ function MemberCard({ member }) {
             .slice(0, 2);
 
     return (
-        <div className="flex-1 w-full min-w-[260px] max-w-[280px] bg-white rounded-xl shadow-sm border border-neutral-100 p-6 xl:p-8 text-center hover:shadow-md transition-shadow flex flex-col items-center justify-start">
+        <div className="flex-1 w-full min-w-[240px] max-w-[260px] bg-white rounded-xl shadow-sm border border-neutral-100 p-4 xl:p-5 text-center hover:shadow-md transition-shadow flex flex-col items-center justify-start">
             {/* Avatar */}
             {member.profileUrl ? (
                 <a href={member.profileUrl} target="_blank" rel="noopener noreferrer" className="block relative group flex-shrink-0">
                     <div
-                        className="w-24 h-24 xl:w-28 xl:h-28 rounded-2xl mb-4 mx-auto flex items-center justify-center text-2xl xl:text-3xl font-bold text-white shadow-md overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                        className="w-20 h-20 xl:w-24 xl:h-24 rounded-2xl mb-3 mx-auto flex items-center justify-center text-xl xl:text-2xl font-bold text-white shadow-md overflow-hidden transition-transform duration-300 group-hover:scale-105"
                         style={{ backgroundColor: '#003366' }}
                     >
                         {member.image ? (
@@ -118,7 +113,7 @@ function MemberCard({ member }) {
                 </a>
             ) : (
                 <div
-                    className="w-24 h-24 xl:w-28 xl:h-28 rounded-2xl mb-4 mx-auto flex items-center justify-center text-2xl xl:text-3xl font-bold text-white shadow-md overflow-hidden flex-shrink-0"
+                    className="w-20 h-20 xl:w-24 xl:h-24 rounded-2xl mb-3 mx-auto flex items-center justify-center text-xl xl:text-2xl font-bold text-white shadow-md overflow-hidden flex-shrink-0"
                     style={{ backgroundColor: '#003366' }}
                 >
                     {member.image ? (
@@ -135,22 +130,26 @@ function MemberCard({ member }) {
 
             {/* Name */}
             {member.profileUrl ? (
-                <a href={member.profileUrl} target="_blank" rel="noopener noreferrer" className="text-xl font-bold text-neutral-900 mb-2 hover:text-primary-600 transition-colors">
+                <a href={member.profileUrl} target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-neutral-900 mb-1 hover:text-primary-600 transition-colors">
                     {member.name}
                 </a>
             ) : (
-                <h3 className="text-xl font-bold text-neutral-900 mb-2">{member.name}</h3>
+                <h3 className="text-lg font-bold text-neutral-900 mb-1">{member.name}</h3>
             )}
 
             {/* Designation */}
-            <p className="text-xs xl:text-sm font-bold text-primary-700 uppercase tracking-wider mb-3 leading-tight">{member.designation}</p>
+            {member.designation ? (
+                <p className="text-xs font-bold text-primary-700 uppercase tracking-wider mb-2 leading-tight">{member.designation}</p>
+            ) : (
+                <div className="mb-2"></div>
+            )}
 
             {/* Affiliation */}
-            <p className="text-sm xl:text-base text-neutral-600 leading-snug">{member.affiliation}</p>
+            <p className="text-xs xl:text-sm text-neutral-600 leading-snug">{member.affiliation}</p>
 
             {/* Email */}
             {member.email && (
-                <a href={`mailto:${member.email}`} className="text-sm text-primary-600 hover:text-primary-800 mt-3 inline-block font-medium">
+                <a href={`mailto:${member.email}`} className="text-xs text-primary-600 hover:text-primary-800 mt-2 inline-block font-medium">
                     {member.email}
                 </a>
             )}

@@ -10,8 +10,9 @@ import TravelVisaPage from './pages/TravelVisaPage';
 import VenueDirectionsPage from './pages/VenueDirectionsPage';
 import ExploreGwaliorPage from './pages/ExploreGwaliorPage';
 import PaperSubmissionPage from './pages/PaperSubmissionPage';
+import ImportantDatesPage from './pages/ImportantDatesPage';
+import CallForReviewersPage from './pages/CallForReviewersPage';
 import { ROUTES } from './constants/routes';
-
 import ScrollToTop from './components/layout/ScrollToTop';
 
 export default function App() {
@@ -29,7 +30,8 @@ export default function App() {
           <Route path="/call-for-papers/camera-ready" element={<Navigate to={ROUTES.PAPER_SUBMISSION} replace />} />
           {/* Backward compatibility: old paper-submission URL */}
           <Route path="/paper-submission" element={<Navigate to={ROUTES.PAPER_SUBMISSION} replace />} />
-          <Route path={ROUTES.IMPORTANT_DATES} element={<Navigate to={ROUTES.TRACKS} replace />} />
+          <Route path={ROUTES.IMPORTANT_DATES} element={<ImportantDatesPage />} />
+          <Route path={ROUTES.CALL_FOR_REVIEWERS} element={<CallForReviewersPage />} />
           <Route path={ROUTES.REGISTRATION} element={<RegistrationPage />} />
           <Route path={ROUTES.TRAVEL_VISA} element={<TravelVisaPage />} />
           <Route path={ROUTES.TRAVEL_VENUE} element={<VenueDirectionsPage />} />

@@ -4,21 +4,19 @@ import HeroSection from '../components/home/HeroSection';
 
 export default function ImportantDatesPage() {
     return (
-        <>
-            {/* Page Header */}
+        <div className="bg-neutral-50 pb-16">
             <HeroSection
                 title="Important Dates"
                 subtitle="Mark your calendar with these key deadlines and dates for ICGST-2026."
             />
 
-            {/* Dates Table */}
-            <SectionContainer background="white">
-                <SectionHeader
-                    title="Conference Timeline"
-                    subtitle="Plan your submission and participation according to these important milestones"
-                />
+            <section className="py-8 md:py-12">
                 <div className="max-w-4xl mx-auto px-4">
-                    <div className="overflow-hidden rounded-xl border border-slate-200 shadow-sm">
+                    <SectionHeader
+                        title="Conference Timeline"
+                        subtitle="Plan your submission and participation according to these important milestones"
+                    />
+                    <div className="overflow-hidden rounded-xl border border-slate-200 shadow-sm bg-white">
                         <table className="w-full text-left">
                             <thead>
                                 <tr style={{ backgroundColor: '#002855' }}>
@@ -30,6 +28,9 @@ export default function ImportantDatesPage() {
                                     </th>
                                     <th className="px-6 py-4 text-sm font-bold uppercase tracking-wider !text-white">
                                         Date
+                                    </th>
+                                    <th className="px-6 py-4 text-sm font-bold uppercase tracking-wider !text-white">
+                                        Link
                                     </th>
                                 </tr>
                             </thead>
@@ -53,6 +54,19 @@ export default function ImportantDatesPage() {
                                         <td className="px-6 py-4 text-sm font-medium text-slate-600">
                                             {item.date}
                                         </td>
+                                        <td className="px-6 py-4 text-sm">
+                                            {item.link === 'coming_soon' ? (
+                                                <span className="inline-flex items-center px-3 py-1 xl:px-4 xl:py-1.5 text-xs font-semibold rounded-full bg-amber-100 text-amber-800 whitespace-nowrap">
+                                                    Coming Soon
+                                                </span>
+                                            ) : item.link ? (
+                                                <a href={item.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-bold rounded shadow-sm !text-white bg-[#002855] hover:bg-[#001a3a] focus:outline-none transition-colors whitespace-nowrap">
+                                                    Click Here
+                                                </a>
+                                            ) : (
+                                                <span className="text-gray-400 font-medium px-4">-</span>
+                                            )}
+                                        </td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -69,7 +83,7 @@ export default function ImportantDatesPage() {
                         </div>
                     </div>
                 </div>
-            </SectionContainer>
-        </>
+            </section>
+        </div>
     );
 }

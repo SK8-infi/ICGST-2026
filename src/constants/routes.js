@@ -4,6 +4,7 @@ export const ROUTES = {
     ABOUT: '/about',
     TRACKS: '/call-for-papers/tracks',
     IMPORTANT_DATES: '/important-dates',
+    CALL_FOR_REVIEWERS: '/call-for-reviewers',
     REGISTRATION: '/registration',
     TRAVEL_VISA: '/travel/visa',
     TRAVEL_VENUE: '/travel/venue',
@@ -18,7 +19,6 @@ export const ROUTES = {
 export const NAV_ITEMS = [
     { label: 'Home', path: ROUTES.HOME },
     { label: 'About', path: ROUTES.ABOUT },
-    { label: 'Call for Papers', path: ROUTES.TRACKS },
     { label: 'Paper Submission', path: ROUTES.PAPER_SUBMISSION },
     { label: 'Registration', path: ROUTES.REGISTRATION },
     { label: 'Committee', path: ROUTES.COMMITTEE },

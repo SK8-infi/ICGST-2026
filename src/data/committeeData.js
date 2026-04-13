@@ -9,6 +9,14 @@ export const honoraryGeneralChairs = [
         profileUrl: 'https://www.iiitm.ac.in/index.php/en/component/splms/teacher/prof-sri-niwas',
         image: 'https://www.iiitm.ac.in/images/demo/teachers/1650440085_Prof.-Sri-Niwas-Singh.jpg',
     },
+    {
+        name: 'Dr. Andrii Chub',
+        designation: 'SMIEEE',
+        affiliation: 'IEEE Estonia Section Chair',
+        email: null,
+        profileUrl: null,
+        image: 'https://media.licdn.com/dms/image/v2/D4E03AQGyqo1ixNK95g/profile-displayphoto-scale_200_200/B4EZgyZ9rGGwAc-/0/1753192324556?e=1777507200&v=beta&t=6x78MrSCYM7WQHGXZXa2H6uw1YuRNp0-Z0zbYxMiQv4',
+    },
 ];
 
 export const generalChairs = [
@@ -56,7 +64,7 @@ export const conferenceCoChairs = [
         affiliation: 'Maulana Azad National Institute of Technology (MANIT), Bhopal',
         email: null,
         profileUrl: 'https://www.manit.ac.in/content/dr-yadunath-pathak',
-        image: 'https://www.manit.ac.in/sites/default/files/documents/Dr%20Yadunath%20Pathak.png',
+        image: 'https://media.licdn.com/dms/image/v2/C5103AQG_7WK3tj9goA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1576826302278?e=1777507200&v=beta&t=bp5uOMFyKquQdGrzdYb7dyfaxruJRAj-I41pnRdYcOg',
     },
 ];
 
