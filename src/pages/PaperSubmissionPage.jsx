@@ -13,6 +13,17 @@ export default function PaperSubmissionPage() {
             />
             <SectionContainer background="white">
                 <div className="max-w-4xl mx-auto px-4 prose prose-slate prose-blue lg:prose-lg mt-8">
+                    <h3 className="px-4 py-2 bg-slate-100 rounded-lg inline-block text-xl font-bold text-slate-900 mb-4">Submission Guidelines</h3>
+                    <ul className="text-slate-700 list-disc pl-6">
+                        <li><strong>Page limit:</strong> Maximum of <strong>6 pages</strong> (10-point, IEEE two-column), including figures, tables, and references.</li>
+                        <li><strong>Originality:</strong> Only original work not published or under review elsewhere will be considered.</li>
+                        <li><strong>Author list:</strong> Ensure all co-authors and affiliations are correctly listed at initial submission.</li>
+                        <li><strong>Format:</strong> Use the latest IEEE conference template.</li>
+                        <li><strong>Presentation:</strong> Registered papers must be presented at the conference for IEEE submission.</li>
+                        <li><strong>Review:</strong> Single-blind review. Papers with poor quality or a high similarity index may be desk rejected.</li>
+                    </ul>
+                    <hr className="my-8 border-slate-200" />
+
                     <p>
                         Prospective authors are invited to submit original technical papers to ICGST-2026. Submissions must follow the standard IEEE conference template and be written in English.
                         Accepted and presented papers will be submitted to IEEE for possible inclusion in IEEE Xplore (subject to IEEE scope and quality checks).
@@ -41,15 +52,11 @@ export default function PaperSubmissionPage() {
                         <div className="bg-white border border-slate-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                             <h3 className="text-lg font-bold text-slate-900 mt-0 mb-2">IEEE Templates</h3>
                             <p className="text-slate-600 text-sm mb-4">
-                                LaTeX is preferred. Word submissions should use the latest IEEE conference template to avoid conversion issues.
+                                Please use the latest IEEE conference template for your submission to ensure correct formatting and avoid conversion issues.
                             </p>
                             <div className="flex gap-3">
-                                <a href="https://template-selector.ieee.org/secure/templateSelector/publicationType" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4">
-                                    LaTeX Template
-                                </a>
-                                <span className="text-slate-300">|</span>
                                 <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4">
-                                    .DOC Template
+                                    Template
                                 </a>
                             </div>
                         </div>
@@ -67,16 +74,6 @@ export default function PaperSubmissionPage() {
                             </ul>
                         </div>
                     </div>
-
-                    <h3 className="px-4 py-2 bg-slate-100 rounded-lg inline-block text-xl font-bold text-slate-900 mb-4">Submission Guidelines</h3>
-                    <ul className="text-slate-700 list-disc pl-6">
-                        <li><strong>Page limit:</strong> Maximum of <strong>6 pages</strong> (10-point, IEEE two-column), including figures, tables, and references.</li>
-                        <li><strong>Originality:</strong> Only original work not published or under review elsewhere will be considered.</li>
-                        <li><strong>Author list:</strong> Ensure all co-authors and affiliations are correctly listed at initial submission.</li>
-                        <li><strong>Format:</strong> Use the IEEE conference template (LaTeX preferred; Word allowed with the latest template).</li>
-                        <li><strong>Presentation:</strong> Registered papers must be presented at the conference for IEEE submission.</li>
-                        <li><strong>Review:</strong> Single-blind review. Papers with poor quality or a high similarity index may be desk rejected.</li>
-                    </ul>
 
                     <h3 className="px-4 py-2 bg-slate-100 rounded-lg inline-block text-xl font-bold text-slate-900 mt-8 mb-4">Camera-Ready (After Acceptance)</h3>
                     <p className="text-slate-700">

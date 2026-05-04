@@ -24,7 +24,7 @@ export default function VenueDirectionsPage() {
                                 </div>
                                 <div>
                                     <h2 className="text-2xl font-black tracking-tight text-white">Conference Venue</h2>
-                                    <p className="text-blue-200 text-sm font-medium">ICGST-2026 • 23–25 October 2026</p>
+                                    <p className="text-blue-200 text-sm font-medium">ICGST-2026 • October 23-25, 2026</p>
                                 </div>
                             </div>
                             <div className="mt-6 space-y-1">

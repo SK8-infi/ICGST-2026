@@ -190,7 +190,7 @@ export default function TravelVisaPage() {
                     <div className="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-2xl">
                         <h3 className="font-bold text-amber-900 text-lg mb-2">⚠️ Apply Early!</h3>
                         <p className="text-amber-800 text-base leading-relaxed">
-                            We strongly recommend applying for your visa at least <strong>8–10 weeks</strong> before the conference dates (23–25 October 2026) to account for processing delays. For any assistance, contact us at{' '}
+                            We strongly recommend applying for your visa at least <strong>8–10 weeks</strong> before the conference dates (October 23-25, 2026) to account for processing delays. For any assistance, contact us at{' '}
                             <a href="mailto:icgst2026@iiitm.ac.in" className="font-semibold underline">icgst2026@iiitm.ac.in</a>.
                         </p>
                     </div>

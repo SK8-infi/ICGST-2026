@@ -3,7 +3,7 @@ export const conferenceInfo = {
     shortTitle: 'ICGST-2026',
     fullTitle: 'International Conference on Green and Sustainable Technologies—2026',
     mode: 'Hybrid',
-    dates: '23rd – 25th October 2026',
+    dates: 'October 23-25, 2026',
     organizedBy: 'Center of Excellence — Sustainable Technology and Green Mobility',
     venue: {
         name: 'Atal Bihari Vajpayee – Indian Institute of Information Technology and Management (ABV-IIITM)',
@@ -74,7 +74,7 @@ export const importantDates = [
     },
     {
         activity: 'Conference Date',
-        date: 'November 15, 2026',
+        date: 'October 23-25, 2026',
         isDeadline: true,
         link: 'https://cmt3.research.microsoft.com/ICGST2026/Submission/Index',
     },

@@ -103,7 +103,7 @@ export default function AboutInstitute() {
                                 </svg>
                             }
                             title="3-Day Conference"
-                            description="23–25 October 2026 at ABV-IIITM, Gwalior"
+                            description="October 23-25, 2026 at ABV-IIITM, Gwalior"
                             link={ROUTES.IMPORTANT_DATES}
                         />
                         <HighlightCard

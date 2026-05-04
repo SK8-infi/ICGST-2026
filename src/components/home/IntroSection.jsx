@@ -58,7 +58,7 @@ export default function IntroSection() {
                                     </div>
                                     <div>
                                         <p className="text-xs text-neutral-500 uppercase tracking-wide font-semibold">Dates</p>
-                                        <p className="text-sm font-bold text-neutral-900">23–25 October 2026</p>
+                                        <p className="text-sm font-bold text-neutral-900">October 23-25, 2026</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-3">
