@@ -15,7 +15,7 @@ export const honoraryGeneralChairs = [
         affiliation: 'IEEE Estonia Section Chair',
         email: null,
         profileUrl: null,
-        image: 'https://media.licdn.com/dms/image/v2/D4E03AQGyqo1ixNK95g/profile-displayphoto-scale_200_200/B4EZgyZ9rGGwAc-/0/1753192324556?e=1777507200&v=beta&t=6x78MrSCYM7WQHGXZXa2H6uw1YuRNp0-Z0zbYxMiQv4',
+        image: 'https://th.bing.com/th/id/OIP.GPnH5sXY_UuvV65WrzwVowAAAA?w=108&h=108&c=1&bgcl=522761&r=0&o=7&dpr=1.3&pid=ImgRC&rm=3',
     },
 ];
 
@@ -26,7 +26,7 @@ export const generalChairs = [
         affiliation: 'Rajkiya Engineering College Sonbhadra (REC Sonbhadra), Uttar Pradesh, India',
         email: null,
         profileUrl: 'https://www.linkedin.com/in/prof-geetam-tomar-73ab7313/',
-        image: 'https://media.licdn.com/dms/image/v2/C5103AQHYb-zpTTszhA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1532668307525?e=1776297600&v=beta&t=24mSF9Z7KEyQ3hbsGABnOJfTKLSfssus8ImIlyK90z4',
+        image: 'https://iatmsi.iiitm.ac.in/wp-content/uploads/2025/11/g-s-tomar-round-1-300x300.png',
     },
     {
         name: 'Prof. Manisha Pattanaik',
@@ -64,7 +64,7 @@ export const conferenceCoChairs = [
         affiliation: 'Maulana Azad National Institute of Technology (MANIT), Bhopal',
         email: null,
         profileUrl: 'https://www.manit.ac.in/content/dr-yadunath-pathak',
-        image: 'https://media.licdn.com/dms/image/v2/C5103AQG_7WK3tj9goA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1576826302278?e=1777507200&v=beta&t=bp5uOMFyKquQdGrzdYb7dyfaxruJRAj-I41pnRdYcOg',
+        image: 'https://media.licdn.com/dms/image/v2/C5103AQG_7WK3tj9goA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1576826302338?e=1779321600&v=beta&t=dLGo7akqFwuFjZe3OKyiABHqhIp23Ff7CTJa-0nq0Jo',
     },
 ];
 
