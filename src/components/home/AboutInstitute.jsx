@@ -55,17 +55,11 @@ export default function AboutInstitute() {
 
                                 <div className="relative rounded-2xl overflow-hidden shadow-2xl group border border-white/50 bg-white">
                                     <div className="absolute inset-0 bg-primary-900/10 group-hover:bg-transparent transition-colors duration-500" />
-                                    <div className="aspect-video w-full bg-gradient-to-br from-slate-100 to-blue-50 flex flex-col items-center justify-center p-8 text-center group-hover:from-blue-50 group-hover:to-white transition-colors duration-500">
-                                        <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm border border-blue-100 mb-4 group-hover:scale-110 transition-transform duration-500">
-                                            <svg className="w-8 h-8 text-blue-400 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                            </svg>
-                                        </div>
-                                        <div className="space-y-1">
-                                            <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">CoE Facility</p>
-                                            <p className="text-xs text-slate-300 font-medium italic">Image Placeholder</p>
-                                        </div>
-                                    </div>
+                                    <img 
+                                        src="https://theacademicinsights.com/wp-content/uploads/2022/01/Atal-Bihari-Vajpayee-Indian-Institute-of-Information-Technology-and-Management-BSOY-2021.jpg" 
+                                        alt="Center of Excellence Facility" 
+                                        className="aspect-video w-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    />
                                 </div>
                             </div>
                         </div>
