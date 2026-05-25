@@ -99,7 +99,7 @@ export default function Navbar() {
                                     <div className="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left z-50 border border-slate-100 ring-1 ring-black ring-opacity-5">
                                         <div className="py-1">
                                             <Link to={ROUTES.TRACKS} className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-700">
-                                                Call for Papers
+                                                Technical Tracks
                                             </Link>
                                             <Link to={ROUTES.IMPORTANT_DATES} className="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-700">
                                                 Important Dates
@@ -227,7 +227,7 @@ export default function Navbar() {
                                         <NavLink to={ROUTES.TRACKS} onClick={() => setIsMenuOpen(false)}
                                             style={{ color: 'rgba(255, 255, 255, 0.8)' }}
                                             className={({ isActive }) => `py-2 text-sm transition-colors !text-white/80 ${isActive ? '!text-white font-bold' : 'hover:!text-white'}`}>
-                                            Call for Papers
+                                            Technical Tracks
                                         </NavLink>
                                         <NavLink to={ROUTES.IMPORTANT_DATES} onClick={() => setIsMenuOpen(false)}
                                             style={{ color: 'rgba(255, 255, 255, 0.8)' }}

@@ -39,7 +39,7 @@ export default function TracksPage() {
                         Ready to Submit Your Paper?
                     </h2>
                     <p className="text-base sm:text-lg text-primary-700 mb-8 max-w-2xl mx-auto">
-                        Paper submissions are open. Last date for submission is 1st May 2026.
+                        Paper submissions are open. Last date for submission is June 30, 2026.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Button to={ROUTES.REGISTRATION} variant="primary" size="lg">

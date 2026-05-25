@@ -37,26 +37,26 @@ export const aboutInstitute = {
 
 export const importantDates = [
     {
-        activity: 'Call for Paper',
-        date: 'March 15, 2026',
+        activity: 'Call for Papers',
+        date: 'May 15, 2026',
         isDeadline: false,
         link: null,
     },
     {
         activity: 'Last Date of Paper Submission',
-        date: 'May 15, 2026',
+        date: 'June 30, 2026',
         isDeadline: true,
         link: 'https://cmt3.research.microsoft.com/ICGST2026/Submission/Index',
     },
     {
         activity: 'Acceptance Notification',
-        date: 'July 15, 2026',
+        date: 'July 31, 2026',
         isDeadline: false,
         link: null,
     },
     {
         activity: 'Camera-Ready Submission',
-        date: 'July 30, 2026',
+        date: 'August 15, 2026',
         isDeadline: true,
         link: 'https://cmt3.research.microsoft.com/ICGST2026/Submission/Index',
     },
