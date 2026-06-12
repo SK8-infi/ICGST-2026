@@ -30,9 +30,9 @@ export default function CommitteePage() {
                             </div>
                         </div>
 
-                        {/* General Chairs */}
+                        {/* General Chair */}
                         <div>
-                            <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-5 text-center">General Chairs</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-5 text-center">General Chair</h2>
                             <div className="flex flex-wrap justify-center items-stretch gap-4">
                                 {generalChairs.map((member, index) => (
                                     <MemberCard key={index} member={member} />

@@ -21,14 +21,6 @@ export const honoraryGeneralChairs = [
 
 export const generalChairs = [
     {
-        name: 'Prof. GS Tomar',
-        designation: null,
-        affiliation: 'Rajkiya Engineering College Sonbhadra (REC Sonbhadra), Uttar Pradesh, India',
-        email: null,
-        profileUrl: 'https://www.linkedin.com/in/prof-geetam-tomar-73ab7313/',
-        image: 'https://iatmsi.iiitm.ac.in/wp-content/uploads/2025/11/g-s-tomar-round-1-300x300.png',
-    },
-    {
         name: 'Prof. Manisha Pattanaik',
         designation: null,
         affiliation: 'ABV-IIITM, Gwalior',

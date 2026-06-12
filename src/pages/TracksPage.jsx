@@ -42,8 +42,8 @@ export default function TracksPage() {
                         Paper submissions are open. Last date for submission is June 30, 2026.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button to={ROUTES.REGISTRATION} variant="primary" size="lg">
-                            Register & Submit
+                        <Button href="https://cmt3.research.microsoft.com/ICGST2026/Submission/Index" variant="primary" size="lg" target="_blank" rel="noopener noreferrer">
+                            Submit Paper
                         </Button>
                     </div>
                 </div>
