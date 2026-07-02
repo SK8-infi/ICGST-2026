@@ -128,6 +128,9 @@ function ContentCard({ item, color, align }) {
 
                         {/* Fluid Typography for Date */}
                         <p className="font-semibold tracking-wide opacity-80" style={{ fontSize: 'clamp(0.5625rem, 1.5vw, 0.75rem)' }}>
+                            {item.oldDate && (
+                                <span className="line-through text-red-500/80 mr-1.5">{item.oldDate}</span>
+                            )}
                             {item.date}
                         </p>
                     </div>

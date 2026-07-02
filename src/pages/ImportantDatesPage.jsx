@@ -52,6 +52,9 @@ export default function ImportantDatesPage() {
                                             </div>
                                         </td>
                                         <td className="px-6 py-4 text-sm font-medium text-slate-600">
+                                            {item.oldDate && (
+                                                <span className="line-through text-red-500/80 mr-2">{item.oldDate}</span>
+                                            )}
                                             {item.date}
                                         </td>
                                         <td className="px-6 py-4 text-sm">
