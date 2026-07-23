@@ -51,19 +51,19 @@ export const importantDates = [
     },
     {
         activity: 'Acceptance Notification',
-        date: 'July 31, 2026',
+        date: 'August 25, 2026',
         isDeadline: false,
         link: null,
     },
     {
         activity: 'Camera-Ready Submission',
-        date: 'August 15, 2026',
+        date: 'September 5, 2026',
         isDeadline: true,
         link: 'https://cmt3.research.microsoft.com/ICGST2026/Submission/Index',
     },
     {
         activity: 'Early Bird Registration Closed',
-        date: 'August 31, 2026',
+        date: 'September 15, 2026',
         isDeadline: true,
         link: 'coming_soon',
     },
